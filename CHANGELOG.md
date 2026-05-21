@@ -8,6 +8,7 @@ Formato: [versão] - data - mudanças.
 - LICENSE (CC-BY-SA 4.0) explícito em arquivo
 - Landing page estática em `docs/` (HTML + CSS + logo SVG)
 - Mini-conjugador online (JS embarcado, sem dependências)
+- Site multi-idioma: pt (padrão), en, es, zh, ja — switcher no header, detecção automática via `navigator.language`, persistência em localStorage
 - CNAME para tapilang.com (GitHub Pages)
 - Repositório publicado em github.com/cchengy/tapi
 
