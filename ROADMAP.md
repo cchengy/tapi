@@ -1,12 +1,15 @@
 # Roadmap Tapi
 
-## v0.6 — Próxima (curto prazo)
+## v0.6 — Atual
 
 ### Infraestrutura
-- [ ] `git init` + repositório GitHub público
-- [ ] Comprar e ativar tapilang.com
-- [ ] Landing page estática (HTML+CSS, 1 página)
-- [ ] Logo / identidade visual
+- [x] `git init` + repositório GitHub público
+- [x] Landing page estática (HTML+CSS, 1 página) em `docs/`
+- [x] Logo SVG
+- [x] Licença explícita CC-BY-SA 4.0
+- [x] Mini-conjugador online (JS)
+- [ ] Comprar e ativar tapilang.com (CNAME pronto)
+- [ ] Habilitar GitHub Pages em Settings → Pages → main/docs
 
 ### Validação
 - [ ] Revisão por linguista (busca de inconsistências)

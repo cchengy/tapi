@@ -2,9 +2,10 @@
 
 Idioma construído do zero. Bissilábico, pronunciável universalmente, composicional.
 
-Site: tapilang.com (a registrar)
-Licença: CC-BY-SA 4.0
-Versão: **v0.5**
+Site: [tapilang.com](https://tapilang.com) (após registro do domínio) — fonte em [docs/](docs/)
+Licença: [CC-BY-SA 4.0](LICENSE)
+Versão: **v0.6**
+Repositório: [github.com/cchengy/tapi](https://github.com/cchengy/tapi)
 
 ## Princípios
 

@@ -2,6 +2,15 @@
 
 Formato: [versão] - data - mudanças.
 
+## [v0.6] - 2026-05-21
+
+### Adicionado
+- LICENSE (CC-BY-SA 4.0) explícito em arquivo
+- Landing page estática em `docs/` (HTML + CSS + logo SVG)
+- Mini-conjugador online (JS embarcado, sem dependências)
+- CNAME para tapilang.com (GitHub Pages)
+- Repositório publicado em github.com/cchengy/tapi
+
 ## [v0.5] - 2026-05-21
 
 ### Adicionado

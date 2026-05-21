@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tapi — Idioma Construído Universal</title>
+<meta name="description" content="Tapi é um idioma construído com 9 sons, raízes bissilábicas, pronunciável em qualquer língua. Aprenda, contribua, compartilhe.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img src="logo.svg" class="logo" alt="logo Tapi">
+  <h1>tapi</h1>
+  <p class="tagline">Idioma construído. 9 sons. Bissilábico. Pronunciável universalmente.</p>
+  <p class="sub">Versão 0.5 · Licença CC-BY-SA 4.0</p>
+  <div class="cta">
+    <a href="#aprender" class="btn primary">Comece a aprender</a>
+    <a href="https://github.com/cchengy/tapi" class="btn">Ver no GitHub</a>
+  </div>
+</header>
+
+<main>
+
+<section id="o-que">
+  <h2>O que é Tapi?</h2>
+  <p>Tapi é um idioma construído do zero com foco em <strong>pronunciabilidade universal</strong> e <strong>composição livre</strong>. Usa apenas 6 consoantes (/p, t, k, m, n, s/) e 3 vogais (/a, i, u/) — sons presentes em mais de 95% das línguas humanas.</p>
+  <p>Toda raiz tem exatamente duas sílabas no padrão CV.CV. Não há tons, clusters ou irregularidades. Palavras complexas são formadas combinando raízes simples com hífen.</p>
+
+  <div class="grid-2">
+    <div class="card"><h3>9 letras</h3><p>a, i, u, p, t, k, m, n, s. Cada uma com um único som.</p></div>
+    <div class="card"><h3>Bissilábico</h3><p>Raízes sempre CVCV. Ritmo regular e previsível.</p></div>
+    <div class="card"><h3>Aglutinante</h3><p>Sufixos curtos marcam tempo, aspecto, plural.</p></div>
+    <div class="card"><h3>Composto</h3><p>Vocabulário cresce combinando raízes com hífen.</p></div>
+  </div>
+</section>
+
+<section id="exemplo">
+  <h2>Exemplo</h2>
+  <div class="example"><span class="tapi">mata kama panu ipa tipi</span>
+<span class="gloss">este  casa  belo  COP grande</span>
+<span class="trans">"Esta casa bela é grande."</span></div>
+
+  <div class="example"><span class="tapi">tunu kuti mipi sapu, pinu una mipi tisi.</span>
+<span class="gloss">sol  voltar em  mar,  lua  vir em  céu</span>
+<span class="trans">"O sol volta ao mar, a lua vem ao céu."</span></div>
+</section>
+
+<section id="sons">
+  <h2>Os Sons</h2>
+  <table>
+    <thead><tr><th>Letra</th><th>IPA</th><th>Pronúncia</th></tr></thead>
+    <tbody>
+      <tr><td>a</td><td>/a/</td><td>como em "casa"</td></tr>
+      <tr><td>i</td><td>/i/</td><td>como em "vida"</td></tr>
+      <tr><td>u</td><td>/u/</td><td>como em "luz"</td></tr>
+      <tr><td>p</td><td>/p/</td><td>como em "pé"</td></tr>
+      <tr><td>t</td><td>/t/</td><td>como em "tá"</td></tr>
+      <tr><td>k</td><td>/k/</td><td>como em "casa"</td></tr>
+      <tr><td>m</td><td>/m/</td><td>como em "mão"</td></tr>
+      <tr><td>n</td><td>/n/</td><td>como em "não"</td></tr>
+      <tr><td>s</td><td>/s/</td><td>como em "sol"</td></tr>
+    </tbody>
+  </table>
+  <p>Acento sempre na penúltima sílaba.</p>
+</section>
+
+<section id="conjugador">
+  <h2>Mini-conjugador</h2>
+  <p>Digite uma raiz verbal (ex: <code>ama</code>, <code>tika</code>, <code>ina</code>):</p>
+
+  <div class="tool">
+    <label for="root">Raiz</label>
+    <input id="root" type="text" placeholder="ama" autocomplete="off">
+    <div class="result" id="conj-out">— digite acima —</div>
+  </div>
+</section>
+
+<section id="aprender">
+  <h2>Como aprender</h2>
+  <ol style="color: var(--fg-soft);">
+    <li>Leia o <a href="https://github.com/cchengy/tapi/blob/main/manual.md">manual em 10 lições</a></li>
+    <li>Memorize as palavras-núcleo usando o <a href="https://github.com/cchengy/tapi/blob/main/anki_tapi.tsv">deck Anki</a> (541 cartões)</li>
+    <li>Pratique compondo frases — quando faltar palavra, <strong>componha</strong></li>
+    <li>Leia os <a href="https://github.com/cchengy/tapi/blob/main/textos.md">textos traduzidos</a> (Babel, Pai Nosso, DUDH, poemas)</li>
+    <li>Consulte o <a href="https://github.com/cchengy/tapi/blob/main/dicionario_pt_tapi.md">dicionário pt→Tapi</a></li>
+  </ol>
+</section>
+
+<section id="recursos">
+  <h2>Recursos completos</h2>
+  <div class="grid-2">
+    <div class="card"><h3><a href="https://github.com/cchengy/tapi/blob/main/fonologia.md">Fonologia</a></h3><p>Inventário de sons em IPA.</p></div>
+    <div class="card"><h3><a href="https://github.com/cchengy/tapi/blob/main/gramatica.md">Gramática</a></h3><p>Morfologia e sintaxe essenciais.</p></div>
+    <div class="card"><h3><a href="https://github.com/cchengy/tapi/blob/main/gramatica_avancada.md">Gramática avançada</a></h3><p>Causativo, evidencialidade, classificadores.</p></div>
+    <div class="card"><h3><a href="https://github.com/cchengy/tapi/blob/main/conjugacao.md">Conjugação</a></h3><p>Tabela completa por tempo × aspecto.</p></div>
+    <div class="card"><h3><a href="https://github.com/cchengy/tapi/blob/main/lexico.tsv">Léxico</a></h3><p>~500 palavras Tapi→Português.</p></div>
+    <div class="card"><h3><a href="https://github.com/cchengy/tapi/blob/main/cultura.md">Cultura</a></h3><p>Calendário, mitologia, provérbios.</p></div>
+    <div class="card"><h3><a href="https://github.com/cchengy/tapi/blob/main/manual.md">Manual</a></h3><p>10 lições didáticas.</p></div>
+    <div class="card"><h3><a href="https://github.com/cchengy/tapi/blob/main/referencia.md">Referência</a></h3><p>Cartão de uma página.</p></div>
+  </div>
+</section>
+
+<section id="contribuir">
+  <h2>Contribuir</h2>
+  <p>Tapi é projeto aberto sob licença CC-BY-SA 4.0. Veja o <a href="https://github.com/cchengy/tapi/blob/main/CONTRIBUTING.md">guia de contribuição</a> e o <a href="https://github.com/cchengy/tapi/blob/main/ROADMAP.md">roadmap</a>.</p>
+  <div class="cta" style="margin-top: 16px; justify-content: flex-start;">
+    <a href="https://github.com/cchengy/tapi" class="btn primary">GitHub</a>
+    <a href="https://github.com/cchengy/tapi/issues" class="btn">Abrir issue</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>tapi v0.5 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · CC-BY-SA 4.0</p>
+</footer>
+
+<script>
+(function() {
+  const TEMPOS = [
+    ["presente", ""],
+    ["passado", "ta"],
+    ["futuro", "ka"],
+  ];
+  const ASPECTOS = [
+    ["simples", ""],
+    ["habitual", "sa"],
+    ["progressivo", "ma"],
+    ["perfectivo", "pa"],
+  ];
+
+  function conjugar(raiz) {
+    if (!raiz || !/^[ptkmnsaiu]+$/.test(raiz)) {
+      return "— digite uma raiz com sons válidos (p t k m n s a i u) —";
+    }
+    let out = "";
+    out += "TEMPO × ASPECTO\n";
+    const hdr = ["tempo".padEnd(11), "simples".padEnd(12), "habitual".padEnd(12), "progress.".padEnd(12), "perfect."].join("| ");
+    out += hdr + "\n";
+    out += "-".repeat(64) + "\n";
+    for (const [tn, ts] of TEMPOS) {
+      const linha = [tn.padEnd(11)];
+      for (const [an, as] of ASPECTOS) {
+        linha.push((raiz + ts + as).padEnd(12));
+      }
+      out += linha.join("| ").trimEnd() + "\n";
+    }
+    out += "\n";
+    out += "Imperativo:  " + raiz + "-ti\n";
+    out += "Voz média:   " + raiz + "-ku\n";
+    out += "Reportado:   " + raiz + "ta-ni-ni  (dizem que X-eu)\n";
+    return out;
+  }
+
+  const input = document.getElementById("root");
+  const out = document.getElementById("conj-out");
+  function update() {
+    const v = input.value.trim().toLowerCase();
+    out.textContent = v ? conjugar(v) : "— digite acima —";
+  }
+  input.addEventListener("input", update);
+})();
+</script>
+
+</body>
+</html>
