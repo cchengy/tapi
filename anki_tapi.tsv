@@ -1,0 +1,542 @@
+Front	Back	Classe	Tags
+eu	mi	pron	tapi pron
+tu/você	tu	pron	tapi pron
+ele/ela	si	pron	tapi pron
+nós	nupi	pron	tapi pron
+vós	mupi	pron	tapi pron
+eles/elas	kupi	pron	tapi pron
+de/posse	ni	part	tapi part
+agente passivo	mu	part	tapi part
+negação	pa	part	tapi part
+pergunta (fim de frase)	ku	part	tapi part
+vocativo (pré-nominal)	na	part	tapi part
+comparativo (mais que)	sa	part	tapi part
+superlativo (o mais)	sami	part	tapi part
+recíproco (pré-verbal)	tatu	part	tapi part
+relativo (que/qual)	ta	part	tapi part
+e	i	conj	tapi conj
+ou	a	conj	tapi conj
+se (condicional)	asi	conj	tapi conj
+porque	miku	conj	tapi conj
+quando (subord.)	upa	conj	tapi conj
+enquanto	pamu	conj	tapi conj
+este/esta	mata	dem	tapi dem
+esse/essa	mati	dem	tapi dem
+aquele/aquela	maku	dem	tapi dem
+aqui	muta	dem	tapi dem
+aí	muki	dem	tapi dem
+ali	muna	dem	tapi dem
+quem	nima	int	tapi int
+o que	nipi	int	tapi int
+onde	nika	int	tapi int
+quando	niku	int	tapi int
+quanto	napa	int	tapi int
+como (composto)	nima-pa	int	tapi int
+por que (composto)	nima-tu	int	tapi int
+ser/estar (cópula)	ipa	verbo	tapi verbo
+um	tani	num	tapi num
+dois	pi	num	tapi num
+três	ti	num	tapi num
+quatro	pu	num	tapi num
+cinco	ka	num	tapi num
+seis	ma	num	tapi num
+sete	nuku	num	tapi num
+oito	nu	num	tapi num
+nove	pina	num	tapi num
+dez	nuna	num	tapi num
+cem	pakuna	num	tapi num
+mil	tikuna	num	tapi num
+todo/tudo	kupa	quant	tapi quant
+muitos	matu	quant	tapi quant
+alguns	muti	quant	tapi quant
+outro	tuma	pron	tapi pron
+pessoa (humano)	mati-mati	subst	tapi subst
+homem (macho)	papu	subst	tapi subst
+mulher	mumi	subst	tapi subst
+pai	papi	subst	tapi subst
+mãe	mama	subst	tapi subst
+filho/cria	kuni	subst	tapi subst
+cônjuge	tupa	subst	tapi subst
+pele	namu	subst	tapi subst
+sangue	kunu	subst	tapi subst
+osso	tipu	subst	tapi subst
+gordura	pupa	subst	tapi subst
+ovo	kaki	subst	tapi subst
+chifre	kuki	subst	tapi subst
+cauda	punu	subst	tapi subst
+pluma/pena	tuku	subst	tapi subst
+cabelo	tutu	subst	tapi subst
+cabeça	miti	subst	tapi subst
+orelha	muni	subst	tapi subst
+olho	pati	subst	tapi subst
+nariz	nina	subst	tapi subst
+boca	munu	subst	tapi subst
+dente	kipa	subst	tapi subst
+língua (anatômica)	pipa	subst	tapi subst
+unha/garra	kiti	subst	tapi subst
+pé	puta	subst	tapi subst
+joelho	tumi	subst	tapi subst
+mão	kanu	subst	tapi subst
+barriga	tuna	subst	tapi subst
+pescoço	miki	subst	tapi subst
+seio	muma	subst	tapi subst
+coração	pumu	subst	tapi subst
+fígado	tuni	subst	tapi subst
+corpo	puti	subst	tapi subst
+animal	natu	subst	tapi subst
+peixe	tuka	subst	tapi subst
+ave	piti	subst	tapi subst
+cachorro	kani	subst	tapi subst
+cobra	kumi	subst	tapi subst
+verme	tini	subst	tapi subst
+árvore	tipa	subst	tapi subst
+floresta	puma	subst	tapi subst
+graveto	mutu	subst	tapi subst
+fruta	tati	subst	tapi subst
+semente	kiki	subst	tapi subst
+folha	papa	subst	tapi subst
+raiz	naku	subst	tapi subst
+casca	minu	subst	tapi subst
+flor	kipi	subst	tapi subst
+grama	kapu	subst	tapi subst
+corda	kuka	subst	tapi subst
+carne	manu	subst	tapi subst
+casa	kama	subst	tapi subst
+terra/chão	tana	subst	tapi subst
+água	mina	subst	tapi subst
+fogo	puka	subst	tapi subst
+ar/vento	nita	subst	tapi subst
+sol	tunu	subst	tapi subst
+lua	pinu	subst	tapi subst
+estrela	kati	subst	tapi subst
+dia	nupa	subst	tapi subst
+noite (composto)	muta-pi	subst	tapi subst
+pedra	mapu	subst	tapi subst
+caminho	nani	subst	tapi subst
+palavra/voz	tama	subst	tapi subst
+nome	nimi	subst	tapi subst
+tempo	kapa	subst	tapi subst
+mundo	nuki	subst	tapi subst
+luz	pana	subst	tapi subst
+sombra/escuro	tiku	subst	tapi subst
+verdade (composto)	muta-ka	subst	tapi subst
+idioma Tapi (nome próprio)	tapi	subst	tapi subst
+rio	tupi	subst	tapi subst
+mar	sapu	subst	tapi subst
+chuva	masu	subst	tapi subst
+neve	musi	subst	tapi subst
+nuvem	satu	subst	tapi subst
+montanha	sani	subst	tapi subst
+sal	saka	subst	tapi subst
+areia	puki	subst	tapi subst
+cinza	kasu	subst	tapi subst
+fumaça	sapi	subst	tapi subst
+solo	musa	subst	tapi subst
+canção (composto)	tama-na	subst	tapi subst
+comida	kasi	subst	tapi subst
+manhã (composto: sol-vir)	tunu-una	subst	tapi subst
+tarde (composto: sol-ir)	tunu-ina	subst	tapi subst
+agora (composto: aqui-tempo)	muta-kapa	subst	tapi subst
+hoje (composto: este-dia)	mata-nupa	subst	tapi subst
+ontem-base	nupa-maku	subst	tapi subst
+ontem (composto + PASS)	nupa-maku-ta	subst	tapi subst
+amanhã (composto + FUT)	nupa-maku-ka	subst	tapi subst
+sempre (composto: todo-tempo)	kupa-kapa	subst	tapi subst
+felicidade (composto)	pumu-tina	subst	tapi subst
+tristeza (composto)	pumu-muka	subst	tapi subst
+raiva (composto)	pumu-puka	subst	tapi subst
+amar	ama	verbo	tapi verbo
+ir	ina	verbo	tapi verbo
+vir	una	verbo	tapi verbo
+comer	mani	verbo	tapi verbo
+beber	piku	verbo	tapi verbo
+dormir	napi	verbo	tapi verbo
+ver	tika	verbo	tapi verbo
+ouvir	sina	verbo	tapi verbo
+falar/dizer	taka	verbo	tapi verbo
+saber	kima	verbo	tapi verbo
+fazer	patu	verbo	tapi verbo
+ter	nuta	verbo	tapi verbo
+dar	puna	verbo	tapi verbo
+pegar/receber	kuta	verbo	tapi verbo
+viver	mipa	verbo	tapi verbo
+morrer	kina	verbo	tapi verbo
+pensar	pita	verbo	tapi verbo
+sonhar	kapi	verbo	tapi verbo
+poder (modal)	puni	verbo	tapi verbo
+dever (modal)	mika	verbo	tapi verbo
+querer (modal)	naki	verbo	tapi verbo
+morder	kamu	verbo	tapi verbo
+chupar	suma	verbo	tapi verbo
+cuspir	sipu	verbo	tapi verbo
+vomitar	sapa	verbo	tapi verbo
+soprar	saki	verbo	tapi verbo
+respirar	nasi	verbo	tapi verbo
+rir	tasi	verbo	tapi verbo
+chorar	sumi	verbo	tapi verbo
+cantar	nasu	verbo	tapi verbo
+dançar	tasu	verbo	tapi verbo
+nadar	saku	verbo	tapi verbo
+voar	siti	verbo	tapi verbo
+andar/caminhar	sipa	verbo	tapi verbo
+chegar	supa	verbo	tapi verbo
+deitar	supi	verbo	tapi verbo
+sentar	supu	verbo	tapi verbo
+ficar de pé	sutu	verbo	tapi verbo
+voltar	kuti	verbo	tapi verbo
+dar à luz	sasu	verbo	tapi verbo
+matar	sika	verbo	tapi verbo
+lutar	siku	verbo	tapi verbo
+caçar	sipi	verbo	tapi verbo
+cortar	sasi	verbo	tapi verbo
+dividir	muku	verbo	tapi verbo
+furar	mupu	verbo	tapi verbo
+cavar	mupa	verbo	tapi verbo
+queimar	katu	verbo	tapi verbo
+lavar	nasa	verbo	tapi verbo
+limpar	naka	verbo	tapi verbo
+temer	nipa	verbo	tapi verbo
+tornar-se	ipi	verbo	tapi verbo
+contar (números)	kupu	verbo	tapi verbo
+puxar	musu	verbo	tapi verbo
+empurrar	nuti	verbo	tapi verbo
+jogar/brincar	tupu	verbo	tapi verbo
+bom	tina	adj	tapi adj
+mau	muka	adj	tapi adj
+grande	tipi	adj	tapi adj
+pequeno	puku	adj	tapi adj
+novo	kini	adj	tapi adj
+velho	mapa	adj	tapi adj
+belo	panu	adj	tapi adj
+feio	tapu	adj	tapi adj
+quente	kuma	adj	tapi adj
+frio	pini	adj	tapi adj
+longo	pami	adj	tapi adj
+curto	mapi	adj	tapi adj
+largo	pumi	adj	tapi adj
+estreito	putu	adj	tapi adj
+grosso	siki	adj	tapi adj
+fino	pisu	adj	tapi adj
+pesado	sati	adj	tapi adj
+leve	tuki	adj	tapi adj
+redondo	mana	adj	tapi adj
+seco	kumu	adj	tapi adj
+molhado	nama	adj	tapi adj
+cheio	nutu	adj	tapi adj
+correto	nuni	adj	tapi adj
+errado	mami	adj	tapi adj
+longe	kana	adj	tapi adj
+perto	mimi	adj	tapi adj
+direito (lado)	samu	adj	tapi adj
+esquerdo	sumu	adj	tapi adj
+preto (cor)	ninu	adj	tapi adj
+branco	tita	adj	tapi adj
+vermelho	pisi	adj	tapi adj
+verde	pisa	adj	tapi adj
+amarelo	mumu	adj	tapi adj
+azul	sasa	adj	tapi adj
+em (dentro)	mipi	prep	tapi prep
+com	kami	prep	tapi prep
+em (sobre)	pasi	prep	tapi prep
+sem	sata	prep	tapi prep
+tudo (substantivado)	mata-mati	pron-indef	tapi pron-indef
+piolho	nami	subst	tapi subst
+perna	tapa	subst	tapi subst
+asa	titu	subst	tapi subst
+tripas/entranhas	pasa	subst	tapi subst
+costas	pupi	subst	tapi subst
+lago	kisa	subst	tapi subst
+poeira	kisu	subst	tapi subst
+neblina/névoa	kisi	subst	tapi subst
+céu	tisi	subst	tapi subst
+gelo	tasa	subst	tapi subst
+ano	taku	subst	tapi subst
+marido (composto homem-cônjuge)	papu-tupa	subst	tapi subst
+esposa (composto mulher-cônjuge)	mumi-tupa	subst	tapi subst
+cheirar	kuku	verbo	tapi verbo
+bater	tata	verbo	tapi verbo
+coçar	titi	verbo	tapi verbo
+girar	tuti	verbo	tapi verbo
+cair	kata	verbo	tapi verbo
+segurar	mamu	verbo	tapi verbo
+apertar (espremer)	mimu	verbo	tapi verbo
+esfregar	nanu	verbo	tapi verbo
+enxugar	nunu	verbo	tapi verbo
+lançar/atirar	sini	verbo	tapi verbo
+amarrar	sinu	verbo	tapi verbo
+costurar	pipi	verbo	tapi verbo
+flutuar	pipu	verbo	tapi verbo
+fluir	pasu	verbo	tapi verbo
+congelar	pupu	verbo	tapi verbo
+inchar	kasa	verbo	tapi verbo
+podre	taki	adj	tapi adj
+sujo (composto: NEG-limpo)	pa-naka	adj	tapi adj
+reto (composto: caminho-longo)	nani-pami	adj	tapi adj
+afiado (composto: dente-grande)	kipa-tipi	adj	tapi adj
+cego/embotado (composto: dente-pequeno)	kipa-puku	adj	tapi adj
+liso (composto: pele-boa)	namu-tina	adj	tapi adj
+tio (raiz dedicada)	sana	subst	tapi subst
+tia	suna	subst	tapi subst
+primo (masc)	sunu	subst	tapi subst
+prima (fem)	sanu	subst	tapi subst
+avô (composto)	papi-mapa	subst	tapi subst
+avó (composto)	mama-mapa	subst	tapi subst
+neto (composto: filho-de-filho)	kuni-ni-kuni	subst	tapi subst
+sogro (composto)	tupa-ni-papi	subst	tapi subst
+sogra (composto)	tupa-ni-mama	subst	tapi subst
+irmão/irmã (composto: co-filho, neutro)	tatu-kuni	subst	tapi subst
+irmão (masc)	tatu-kuni-papu	subst	tapi subst
+irmã (fem)	tatu-kuni-mumi	subst	tapi subst
+sobrinho (composto)	kuni-papu	subst	tapi subst
+sobrinha (composto)	kuni-mumi	subst	tapi subst
+roxo (composto: vermelho-azul)	pisi-sasa	adj	tapi adj
+laranja (composto)	pisi-mumu	adj	tapi adj
+marrom (composto: terra-cinza)	tana-kasu	adj	tapi adj
+rosa (composto: vermelho-branco)	pisi-tita	adj	tapi adj
+dourado (composto: sol-amarelo)	tunu-mumu	adj	tapi adj
+prateado (composto: lua-branco)	pinu-tita	adj	tapi adj
+domingo	nupa-tani	subst	tapi subst
+segunda	nupa-pi	subst	tapi subst
+terça	nupa-ti	subst	tapi subst
+quarta	nupa-pu	subst	tapi subst
+quinta	nupa-ka	subst	tapi subst
+sexta	nupa-ma	subst	tapi subst
+sábado	nupa-nuku	subst	tapi subst
+mês (composto: lua-tempo)	pinu-kapa	subst	tapi subst
+primavera (composto: flor-tempo)	kipi-kapa	subst	tapi subst
+verão (composto: quente-tempo)	kuma-kapa	subst	tapi subst
+outono (composto: folha-cair)	papa-kata	subst	tapi subst
+inverno (composto: frio-tempo)	pini-kapa	subst	tapi subst
+aurora (composto: sol-chegar)	tunu-supa	subst	tapi subst
+crepúsculo (composto: sol-voltar)	tunu-kuti	subst	tapi subst
+meio-dia (composto: sol-topo)	tunu-miti	subst	tapi subst
+meia-noite (composto)	muta-pi-miti	subst	tapi subst
+médico (composto: saber-corpo)	kima-puti	subst	tapi subst
+professor (composto: saber-dar)	kima-puna	subst	tapi subst
+aluno (composto: saber-receber)	kima-kuta	subst	tapi subst
+agricultor (composto: terra-fazer)	tana-patu	subst	tapi subst
+engenheiro (composto: fazer-saber)	patu-kima	subst	tapi subst
+soldado (composto: lutar-pessoa)	siku-mati	subst	tapi subst
+artista (composto: belo-fazer)	panu-patu	subst	tapi subst
+escritor (composto)	tama-patu	subst	tapi subst
+músico (composto: canção-fazer)	tama-na-patu	subst	tapi subst
+cozinheiro (composto)	kasi-patu	subst	tapi subst
+comerciante (composto)	kuta-puna-mati	subst	tapi subst
+juiz (composto: verdade-fazer)	muta-ka-patu	subst	tapi subst
+líder/chefe (composto: cabeça-pessoa)	miti-mati	subst	tapi subst
+computador (composto: contar-pedra)	kupu-mapu	subst	tapi subst
+internet (composto: palavra-tudo)	tama-kupa	subst	tapi subst
+telefone (composto: palavra-longa)	tama-pami	subst	tapi subst
+celular (composto)	tama-pami-puku	subst	tapi subst
+carro (composto: casa-pé)	kama-puta	subst	tapi subst
+avião (composto: casa-asa)	kama-titu	subst	tapi subst
+trem (composto)	kama-kuka	subst	tapi subst
+bicicleta (composto: redondo-pé)	mana-puta	subst	tapi subst
+barco (composto: casa-água)	kama-mina	subst	tapi subst
+foto (composto: olho-ver)	pati-tika	subst	tapi subst
+vídeo (composto)	pati-tika-pami	subst	tapi subst
+rádio (composto)	tama-na-pami	subst	tapi subst
+eletricidade (composto: fogo-longo)	puka-pami	subst	tapi subst
+pão (composto: comida-básica)	kasi-tani	subst	tapi subst
+arroz (composto: grande-semente)	tipi-kiki	subst	tapi subst
+feijão (composto: semente-preta)	kiki-ninu	subst	tapi subst
+café (composto: água-preta)	mina-ninu	subst	tapi subst
+leite (composto: seio-água)	muma-mina	subst	tapi subst
+queijo (composto: leite-quente)	muma-mina-kuma	subst	tapi subst
+vinho (composto: fruta-água-vermelha)	tati-mina-pisi	subst	tapi subst
+cerveja (composto: semente-água-fermentada)	kiki-mina-kuma	subst	tapi subst
+vegetal (composto: grama-comida)	kapu-kasi	subst	tapi subst
+cavalo (composto: ir-animal)	ina-natu	subst	tapi subst
+vaca (composto: seio-animal)	muma-natu	subst	tapi subst
+porco (composto: gordura-animal)	pupa-natu	subst	tapi subst
+galinha (composto: ovo-ave)	kaki-piti	subst	tapi subst
+ovelha (composto: pelo-animal)	tutu-natu	subst	tapi subst
+leão (composto: lutar-animal)	siku-natu	subst	tapi subst
+elefante (composto)	tipi-tipi-natu	subst	tapi subst
+liberdade (composto: sem-corda)	pa-kuka	subst	tapi subst
+justiça (composto: verdade-fazer-nominalizado)	muta-ka-patu-i	subst	tapi subst
+paz (composto: sem-guerra)	pa-siku	subst	tapi subst
+guerra (composto)	tipi-siku	subst	tapi subst
+Deus (composto: ser-grande-superlativo)	ipa-tipi-sami	subst	tapi subst
+alma (composto: coração-luz)	pumu-pana	subst	tapi subst
+espírito (composto: vento-pessoa)	nita-mati	subst	tapi subst
+mente (composto: pensar-casa)	pita-kama	subst	tapi subst
+número (composto)	kupu-tama	subst	tapi subst
+zero (composto: não-um)	pa-tani	num	tapi num
+mais (intensificador)	sa	adv	tapi adv
+menos (composto)	pa-sa	adv	tapi adv
+somar (composto: contar-grande)	kupu-tipi	verbo	tapi verbo
+subtrair (composto)	kupu-puku	verbo	tapi verbo
+multiplicar (composto)	kupu-matu	verbo	tapi verbo
+norte (composto: estrela-primeira)	kati-tani	subst	tapi subst
+sul (composto: estrelas-todas)	kati-kupa	subst	tapi subst
+frente (composto: olho-de)	pati-ni	subst/prep	tapi subst/prep
+trás (composto: costas-de)	pupi-ni	subst/prep	tapi subst/prep
+cima (composto: cabeça-de)	miti-ni	subst/prep	tapi subst/prep
+baixo (composto: pé-de)	puta-ni	subst/prep	tapi subst/prep
+fora (composto: não-dentro)	pa-mipi	prep	tapi prep
+roupa (composto: pele-toda)	namu-kupa	subst	tapi subst
+chapéu (composto: cabeça-roupa)	miti-namu	subst	tapi subst
+camisa (composto: corpo-roupa)	puti-namu	subst	tapi subst
+calça (composto: perna-roupa)	tapa-namu	subst	tapi subst
+sapato (composto: pé-roupa)	puta-namu	subst	tapi subst
+dedo (composto: mão-pequena)	kanu-puku	subst	tapi subst
+anel (composto)	kanu-puku-mana	subst	tapi subst
+mesa (composto: feita-superfície)	patu-tana	subst	tapi subst
+cadeira (composto: sentar-objeto)	supu-patu	subst	tapi subst
+cama (composto: deitar-objeto)	supi-patu	subst	tapi subst
+porta (composto: casa-boca)	kama-munu	subst	tapi subst
+janela (composto: casa-olho)	kama-pati	subst	tapi subst
+parede (composto: casa-costas)	kama-pupi	subst	tapi subst
+faca (composto)	sasi-patu	subst	tapi subst
+colher (homônimo cozinheiro; contexto)	kasi-patu	subst	tapi subst
+garfo (composto)	kasi-kiti	subst	tapi subst
+prato (composto)	kasi-tana	subst	tapi subst
+copo (composto: água-casa)	mina-kama	subst	tapi subst
+estrada (composto: caminho-grande)	nani-tipi	subst	tapi subst
+ponte (composto: caminho-rio)	nani-tupi	subst	tapi subst
+tempestade (composto)	tipi-masu	subst	tapi subst
+raio (composto: luz-fogo)	pana-puka	subst	tapi subst
+trovão (composto: céu-voz)	tisi-tama	subst	tapi subst
+arco-íris (composto)	masu-pana-tipi	subst	tapi subst
+granizo (composto)	tasa-masu	subst	tapi subst
+enchente (composto)	tipi-mina	subst	tapi subst
+seca (composto)	kumu-kapa	subst	tapi subst
+terremoto (composto: terra-dança)	tana-tasu	subst	tapi subst
+vulcão (composto: montanha-fogo)	sani-puka	subst	tapi subst
+dedo (mão) primeiro = polegar	kanu-puku-tani	subst	tapi subst
+dedo do pé	puta-puku	subst	tapi subst
+ombro (raiz nova)	mami-puti	subst	tapi subst
+ombro (composto: macho-cabeça do braço)	papu-miti	subst	tapi subst
+cotovelo (composto: mão-joelho)	kanu-tumi	subst	tapi subst
+pulso (composto)	kanu-supi	subst	tapi subst
+tornozelo (composto: pé-joelho)	puta-tumi	subst	tapi subst
+coxa (composto: perna-grande)	tapa-tipi	subst	tapi subst
+panturrilha (composto: perna-pequena)	tapa-puku	subst	tapi subst
+quadril (composto)	puti-tatu	subst	tapi subst
+costela (composto)	puti-tipu	subst	tapi subst
+espinha (composto)	puti-pupi	subst	tapi subst
+fome (composto: comer-NEG existência)	mani-pa	subst	tapi subst
+sede (composto)	piku-pa	subst	tapi subst
+sono (composto)	napi-pa	subst	tapi subst
+dor (composto: corpo-mal)	puti-muka	subst	tapi subst
+conforto (composto)	puti-tina	subst	tapi subst
+vergonha (composto: olho-velho)	pati-mapa	subst	tapi subst
+orgulho (composto)	pumu-tipi-sami	subst	tapi subst
+inveja (composto)	pumu-naki-tuma	subst	tapi subst
+gratidão (composto: coração-fruto)	pumu-tati	subst	tapi subst
+preguiça (composto: corpo-frio)	puti-pini	subst	tapi subst
+animação (composto: coração-de-pé)	pumu-sutu	subst	tapi subst
+tédio (composto: tempo-tudo)	kapa-kupa	subst	tapi subst
+lembrar (composto: pensar-voltar)	pita-kuti	verbo	tapi verbo
+esquecer (composto: pensar-NEG)	pita-pa	verbo	tapi verbo
+reconhecer (composto)	tika-kuti	verbo	tapi verbo
+entender (composto: saber-chegar)	kima-supa	verbo	tapi verbo
+confundir (composto: dividir-pensar)	muku-pita	verbo	tapi verbo
+decidir (composto)	naki-pita	verbo	tapi verbo
+escolher (composto: pegar-pensar)	kuta-pita	verbo	tapi verbo
+hesitar (composto)	pa-pita	verbo	tapi verbo
+duvidar (composto)	kima-pa	verbo	tapi verbo
+imaginar (composto)	pita-pana	verbo	tapi verbo
+planejar (composto: pensar-FUT)	pita-ka	verbo	tapi verbo
+suspeitar (composto)	kima-puku	verbo	tapi verbo
+ajudar (composto: amar-dar)	ama-puna	verbo	tapi verbo
+prejudicar (composto)	muka-puna	verbo	tapi verbo
+enganar (composto)	muta-ka-pa	verbo	tapi verbo
+perdoar (composto: dividir-mal)	muku-muka	verbo	tapi verbo
+vingar (composto)	muka-kuti	verbo	tapi verbo
+prometer (composto)	taka-mika	verbo	tapi verbo
+ameaçar (composto)	taka-nipa	verbo	tapi verbo
+agradecer (composto: dizer-bom)	taka-tina	verbo	tapi verbo
+desculpar (composto)	taka-muku	verbo	tapi verbo
+cumprimentar (composto)	taka-supa	verbo	tapi verbo
+visitar (composto)	supa-kama	verbo	tapi verbo
+encontrar (composto)	supa-mati	verbo	tapi verbo
+despedir-se (composto)	ina-taka	verbo	tapi verbo
+casar (composto: cônjuge-fazer)	tupa-patu	verbo	tapi verbo
+divorciar (composto)	tupa-muku	verbo	tapi verbo
+namorar (composto)	ama-kapa	verbo	tapi verbo
+trabalho (composto: fazer-tempo)	patu-kapa	subst	tapi subst
+dinheiro (composto: pedra-pedra) — reduplicação	mapu-mapu	subst	tapi subst
+comprar (composto: pegar-dinheiro)	kuta-mapu	verbo	tapi verbo
+vender (composto)	puna-mapu	verbo	tapi verbo
+trocar (composto)	tatu-puna	verbo	tapi verbo
+preço (composto)	mapu-kapa	subst	tapi subst
+lucro (composto)	mapu-tipi	subst	tapi subst
+prejuízo (composto)	mapu-puku	subst	tapi subst
+dívida (composto)	mapu-kuti	subst	tapi subst
+rico (composto)	matu-mapu	adj	tapi adj
+pobre (composto)	puku-mapu	adj	tapi adj
+lei (composto: verdade-palavra)	muta-ka-tama	subst	tapi subst
+crime (composto: mal-feito)	muka-patu	subst	tapi subst
+polícia (composto)	sika-mati	subst	tapi subst
+prisão (composto: dentro-casa)	mipi-kama	subst	tapi subst
+governo (composto)	miti-mati-tipi	subst	tapi subst
+presidente (composto)	miti-mati-sami	subst	tapi subst
+eleição (composto: pegar-pensar)	kuta-pita	subst	tapi subst
+votar (composto: voltar-pensar)	kuti-pita	verbo	tapi verbo
+fronteira (composto: caminho-terra)	nani-tana	subst	tapi subst
+exército (composto)	siku-mati-kupa	subst	tapi subst
+oração (composto: coração-palavra)	pumu-tama	subst	tapi subst
+sacrifício (composto: morrer-dar)	kina-puna	subst	tapi subst
+ritual (composto: sonhar-fazer)	kapi-patu	subst	tapi subst
+templo (composto)	ipa-tipi-kama	subst	tapi subst
+sagrado (reduplicação: bom-bom)	tina-tina	adj	tapi adj
+pecaminoso (reduplicação)	muka-muka	adj	tapi adj
+arte (composto: belo-fazer; dup artista)	panu-patu	subst	tapi subst
+feiura (composto)	panu-pa	subst	tapi subst
+criar (composto: fazer-novo)	patu-kini	verbo	tapi verbo
+inspirar (composto)	pita-kini	verbo	tapi verbo
+expressar (composto)	taka-pana	verbo	tapi verbo
+pintura (composto: bela-água)	panu-mina	subst	tapi subst
+escultura (composto)	panu-mapu	subst	tapi subst
+dança (composto: bela-dançar)	panu-tasu	subst	tapi subst
+teatro (composto: belo-ver)	panu-tika	subst	tapi subst
+cinema (composto)	pati-tika-kupa	subst	tapi subst
+música (dup, já tem)	tama-na-patu	subst	tapi subst
+instrumento musical (composto)	kuka-tama-na	subst	tapi subst
+ritmo (composto: tempo-canção)	kapa-tama-na	subst	tapi subst
+melodia (composto)	tina-tama-na	subst	tapi subst
+harmonia (composto)	kupa-tama-na	subst	tapi subst
+ciência (composto: saber-grande)	kima-tipi	subst	tapi subst
+experimento (dup engenheiro; contexto)	patu-kima	subst	tapi subst
+teoria (composto: pensar-saber)	pita-kima	subst	tapi subst
+hipótese (composto)	pita-puku	subst	tapi subst
+prova (dup justiça)	muta-ka-patu-i	subst	tapi subst
+átomo (composto: pequeno-pequeno-substância)	puku-puku-tipi	subst	tapi subst
+molécula (composto)	puku-tipi	subst	tapi subst
+elemento (composto)	puti-kupa	subst	tapi subst
+energia (composto: fogo-coração)	puka-pumu	subst	tapi subst
+força (composto)	musu-tipi	subst	tapi subst
+gravidade (composto: terra-puxar)	tana-musu	subst	tapi subst
+eletricidade (dup acima)	puka-pami	subst	tapi subst
+calor (dup adj)	kuma	subst	tapi subst
+doença (composto: bem-NEG)	tipi-pa	subst	tapi subst
+saúde (dup conforto)	puti-tina	subst	tapi subst
+remédio (composto: limpar-grande)	naka-tipi	subst	tapi subst
+hospital (dup templo; contexto)	ipa-tipi-kama	subst	tapi subst
+febre (composto)	puti-kuma	subst	tapi subst
+tosse (composto: respirar-grande)	nasi-tipi	subst	tapi subst
+ferida (composto)	puti-sasi	subst	tapi subst
+infecção (composto: verme-grande)	nuku-tipi	subst	tapi subst
+vacina (composto: corpo-prevenção)	puti-pa	subst	tapi subst
+esporte (já verbo jogar)	tupu	subst	tapi subst
+time (composto)	tupu-mati	subst	tapi subst
+vencer (composto: melhor-fazer)	sami-patu	verbo	tapi verbo
+perder (composto)	pa-sami	verbo	tapi verbo
+empatar (composto: igual-fazer)	tani-tani-patu	verbo	tapi verbo
+futebol (composto: pé-jogo)	puta-tupu	subst	tapi subst
+corrida (composto)	puta-sipa-tipi	subst	tapi subst
+salto (composto: levantar-grande)	sutu-tipi	subst	tapi subst
+natação competitiva (composto)	saku-tupu	subst	tapi subst
+escola (composto: saber-casa)	kima-kama	subst	tapi subst
+professor (dup acima)	kima-puna	subst	tapi subst
+aluno (dup acima)	kima-kuta	subst	tapi subst
+livro (composto: palavra-raiz)	tama-naku	subst	tapi subst
+lição (composto)	tama-naku-puku	subst	tapi subst
+ler (composto: ver-palavra)	tika-tama	verbo	tapi verbo
+escrever (composto: fazer-palavra)	patu-tama	verbo	tapi verbo
+estudar (composto: saber-tempo)	kima-kapa	verbo	tapi verbo
+ensinar (homônimo)	kima-puna	verbo	tapi verbo
+aprender (homônimo)	kima-kuta	verbo	tapi verbo
+examinar (composto: saber-ver)	kima-tika	verbo	tapi verbo

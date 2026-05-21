@@ -1,0 +1,551 @@
+palavra	classe	significado	notas
+mi	pron	eu
+tu	pron	tu/você
+si	pron	ele/ela
+nupi	pron	nós
+mupi	pron	vós
+kupi	pron	eles/elas
+ni	part	de/posse
+mu	part	agente passivo
+pa	part	negação
+ku	part	pergunta (fim de frase)
+na	part	vocativo (pré-nominal)
+sa	part	comparativo (mais que)
+sami	part	superlativo (o mais)
+tatu	part	recíproco (pré-verbal)
+ta	part	relativo (que/qual)
+-ku	suf	reflexivo (em pronome)
+-ti	suf	imperativo (em verbo)
+ku-	pref	ordinal (em numeral)
+-ta	suf	passado (em verbo)
+-ka	suf	futuro (em verbo)
+-sa	suf	habitual (em verbo)
+-ma	suf	progressivo (em verbo)
+-pa	suf	perfectivo (em verbo)
+-n	suf	plural (em substantivo/adjetivo)
+i	conj	e
+a	conj	ou
+asi	conj	se (condicional)
+miku	conj	porque
+upa	conj	quando (subord.)
+pamu	conj	enquanto
+mata	dem	este/esta
+mati	dem	esse/essa
+maku	dem	aquele/aquela
+muta	dem	aqui
+muki	dem	aí
+muna	dem	ali
+nima	int	quem
+nipi	int	o que
+nika	int	onde
+niku	int	quando
+napa	int	quanto
+nima-pa	int	como (composto)
+nima-tu	int	por que (composto)
+ipa	verbo	ser/estar (cópula)
+tani	num	um
+pi	num	dois
+ti	num	três
+pu	num	quatro
+ka	num	cinco
+ma	num	seis
+nuku	num	sete
+nu	num	oito
+pina	num	nove
+nuna	num	dez
+pakuna	num	cem
+tikuna	num	mil
+kupa	quant	todo/tudo
+matu	quant	muitos
+muti	quant	alguns
+tuma	pron	outro
+mati-mati	subst	pessoa (humano)
+papu	subst	homem (macho)
+mumi	subst	mulher
+papi	subst	pai
+mama	subst	mãe
+kuni	subst	filho/cria
+tupa	subst	cônjuge
+namu	subst	pele
+kunu	subst	sangue
+tipu	subst	osso
+pupa	subst	gordura
+kaki	subst	ovo
+kuki	subst	chifre
+punu	subst	cauda
+tuku	subst	pluma/pena
+tutu	subst	cabelo
+miti	subst	cabeça
+muni	subst	orelha
+pati	subst	olho
+nina	subst	nariz
+munu	subst	boca
+kipa	subst	dente
+pipa	subst	língua (anatômica)
+kiti	subst	unha/garra
+puta	subst	pé
+tumi	subst	joelho
+kanu	subst	mão
+tuna	subst	barriga
+miki	subst	pescoço
+muma	subst	seio
+pumu	subst	coração
+tuni	subst	fígado
+puti	subst	corpo
+natu	subst	animal
+tuka	subst	peixe
+piti	subst	ave
+kani	subst	cachorro
+kumi	subst	cobra
+tini	subst	verme
+tipa	subst	árvore
+puma	subst	floresta
+mutu	subst	graveto
+tati	subst	fruta
+kiki	subst	semente
+papa	subst	folha
+naku	subst	raiz
+minu	subst	casca
+kipi	subst	flor
+kapu	subst	grama
+kuka	subst	corda
+manu	subst	carne
+kama	subst	casa
+tana	subst	terra/chão
+mina	subst	água
+puka	subst	fogo
+nita	subst	ar/vento
+tunu	subst	sol
+pinu	subst	lua
+kati	subst	estrela
+nupa	subst	dia
+muta-pi	subst	noite (composto)
+mapu	subst	pedra
+nani	subst	caminho
+tama	subst	palavra/voz
+nimi	subst	nome
+kapa	subst	tempo
+nuki	subst	mundo
+pana	subst	luz
+tiku	subst	sombra/escuro
+muta-ka	subst	verdade (composto)
+tapi	subst	idioma Tapi (nome próprio)
+tupi	subst	rio
+sapu	subst	mar
+masu	subst	chuva
+musi	subst	neve
+satu	subst	nuvem
+sani	subst	montanha
+saka	subst	sal
+puki	subst	areia
+kasu	subst	cinza
+sapi	subst	fumaça
+musa	subst	solo
+tama-na	subst	canção (composto)
+kasi	subst	comida
+tunu-una	subst	manhã (composto: sol-vir)
+tunu-ina	subst	tarde (composto: sol-ir)
+muta-kapa	subst	agora (composto: aqui-tempo)
+mata-nupa	subst	hoje (composto: este-dia)
+nupa-maku	subst	ontem-base
+nupa-maku-ta	subst	ontem (composto + PASS)
+nupa-maku-ka	subst	amanhã (composto + FUT)
+kupa-kapa	subst	sempre (composto: todo-tempo)
+pumu-tina	subst	felicidade (composto)
+pumu-muka	subst	tristeza (composto)
+pumu-puka	subst	raiva (composto)
+ama	verbo	amar
+ina	verbo	ir
+una	verbo	vir
+mani	verbo	comer
+piku	verbo	beber
+napi	verbo	dormir
+tika	verbo	ver
+sina	verbo	ouvir
+taka	verbo	falar/dizer
+kima	verbo	saber
+patu	verbo	fazer
+nuta	verbo	ter
+puna	verbo	dar
+kuta	verbo	pegar/receber
+mipa	verbo	viver
+kina	verbo	morrer
+pita	verbo	pensar
+kapi	verbo	sonhar
+puni	verbo	poder (modal)
+mika	verbo	dever (modal)
+naki	verbo	querer (modal)
+kamu	verbo	morder
+suma	verbo	chupar
+sipu	verbo	cuspir
+sapa	verbo	vomitar
+saki	verbo	soprar
+nasi	verbo	respirar
+tasi	verbo	rir
+sumi	verbo	chorar
+nasu	verbo	cantar
+tasu	verbo	dançar
+saku	verbo	nadar
+siti	verbo	voar
+sipa	verbo	andar/caminhar
+supa	verbo	chegar
+supi	verbo	deitar
+supu	verbo	sentar
+sutu	verbo	ficar de pé
+kuti	verbo	voltar
+sasu	verbo	dar à luz
+sika	verbo	matar
+siku	verbo	lutar
+sipi	verbo	caçar
+sasi	verbo	cortar
+muku	verbo	dividir
+mupu	verbo	furar
+mupa	verbo	cavar
+katu	verbo	queimar
+nasa	verbo	lavar
+naka	verbo	limpar
+nipa	verbo	temer
+ipi	verbo	tornar-se
+kupu	verbo	contar (números)
+musu	verbo	puxar
+nuti	verbo	empurrar
+tupu	verbo	jogar/brincar
+tina	adj	bom
+muka	adj	mau
+tipi	adj	grande
+puku	adj	pequeno
+kini	adj	novo
+mapa	adj	velho
+panu	adj	belo
+tapu	adj	feio
+kuma	adj	quente
+pini	adj	frio
+pami	adj	longo
+mapi	adj	curto
+pumi	adj	largo
+putu	adj	estreito
+siki	adj	grosso
+pisu	adj	fino
+sati	adj	pesado
+tuki	adj	leve
+mana	adj	redondo
+kumu	adj	seco
+nama	adj	molhado
+nutu	adj	cheio
+nuni	adj	correto
+mami	adj	errado
+kana	adj	longe
+mimi	adj	perto
+samu	adj	direito (lado)
+sumu	adj	esquerdo
+ninu	adj	preto (cor)
+tita	adj	branco
+pisi	adj	vermelho
+pisa	adj	verde
+mumu	adj	amarelo
+sasa	adj	azul
+mipi	prep	em (dentro)
+kami	prep	com
+pasi	prep	em (sobre)
+sata	prep	sem
+mata-mati	pron-indef	tudo (substantivado)
+nami	subst	piolho
+tapa	subst	perna
+titu	subst	asa
+pasa	subst	tripas/entranhas
+pupi	subst	costas
+kisa	subst	lago
+kisu	subst	poeira
+kisi	subst	neblina/névoa
+tisi	subst	céu
+tasa	subst	gelo
+taku	subst	ano
+papu-tupa	subst	marido (composto homem-cônjuge)
+mumi-tupa	subst	esposa (composto mulher-cônjuge)
+kuku	verbo	cheirar
+tata	verbo	bater
+titi	verbo	coçar
+tuti	verbo	girar
+kata	verbo	cair
+mamu	verbo	segurar
+mimu	verbo	apertar (espremer)
+nanu	verbo	esfregar
+nunu	verbo	enxugar
+sini	verbo	lançar/atirar
+sinu	verbo	amarrar
+pipi	verbo	costurar
+pipu	verbo	flutuar
+pasu	verbo	fluir
+pupu	verbo	congelar
+kasa	verbo	inchar
+taki	adj	podre
+pa-naka	adj	sujo (composto: NEG-limpo)
+nani-pami	adj	reto (composto: caminho-longo)
+kipa-tipi	adj	afiado (composto: dente-grande)
+kipa-puku	adj	cego/embotado (composto: dente-pequeno)
+namu-tina	adj	liso (composto: pele-boa)
+sana	subst	tio (raiz dedicada)
+suna	subst	tia
+sunu	subst	primo (masc)
+sanu	subst	prima (fem)
+papi-mapa	subst	avô (composto)
+mama-mapa	subst	avó (composto)
+kuni-ni-kuni	subst	neto (composto: filho-de-filho)
+tupa-ni-papi	subst	sogro (composto)
+tupa-ni-mama	subst	sogra (composto)
+tatu-kuni	subst	irmão/irmã (composto: co-filho, neutro)
+tatu-kuni-papu	subst	irmão (masc)
+tatu-kuni-mumi	subst	irmã (fem)
+kuni-papu	subst	sobrinho (composto)
+kuni-mumi	subst	sobrinha (composto)
+pisi-sasa	adj	roxo (composto: vermelho-azul)
+pisi-mumu	adj	laranja (composto)
+tana-kasu	adj	marrom (composto: terra-cinza)
+pisi-tita	adj	rosa (composto: vermelho-branco)
+tunu-mumu	adj	dourado (composto: sol-amarelo)
+pinu-tita	adj	prateado (composto: lua-branco)
+nupa-tani	subst	domingo
+nupa-pi	subst	segunda
+nupa-ti	subst	terça
+nupa-pu	subst	quarta
+nupa-ka	subst	quinta
+nupa-ma	subst	sexta
+nupa-nuku	subst	sábado
+pinu-kapa	subst	mês (composto: lua-tempo)
+kipi-kapa	subst	primavera (composto: flor-tempo)
+kuma-kapa	subst	verão (composto: quente-tempo)
+papa-kata	subst	outono (composto: folha-cair)
+pini-kapa	subst	inverno (composto: frio-tempo)
+tunu-supa	subst	aurora (composto: sol-chegar)
+tunu-kuti	subst	crepúsculo (composto: sol-voltar)
+tunu-miti	subst	meio-dia (composto: sol-topo)
+muta-pi-miti	subst	meia-noite (composto)
+kima-puti	subst	médico (composto: saber-corpo)
+kima-puna	subst	professor (composto: saber-dar)
+kima-kuta	subst	aluno (composto: saber-receber)
+tana-patu	subst	agricultor (composto: terra-fazer)
+patu-kima	subst	engenheiro (composto: fazer-saber)
+siku-mati	subst	soldado (composto: lutar-pessoa)
+panu-patu	subst	artista (composto: belo-fazer)
+tama-patu	subst	escritor (composto)
+tama-na-patu	subst	músico (composto: canção-fazer)
+kasi-patu	subst	cozinheiro (composto)
+kuta-puna-mati	subst	comerciante (composto)
+muta-ka-patu	subst	juiz (composto: verdade-fazer)
+miti-mati	subst	líder/chefe (composto: cabeça-pessoa)
+kupu-mapu	subst	computador (composto: contar-pedra)
+tama-kupa	subst	internet (composto: palavra-tudo)
+tama-pami	subst	telefone (composto: palavra-longa)
+tama-pami-puku	subst	celular (composto)
+kama-puta	subst	carro (composto: casa-pé)
+kama-titu	subst	avião (composto: casa-asa)
+kama-kuka	subst	trem (composto)
+mana-puta	subst	bicicleta (composto: redondo-pé)
+kama-mina	subst	barco (composto: casa-água)
+pati-tika	subst	foto (composto: olho-ver)
+pati-tika-pami	subst	vídeo (composto)
+tama-na-pami	subst	rádio (composto)
+puka-pami	subst	eletricidade (composto: fogo-longo)
+kasi-tani	subst	pão (composto: comida-básica)
+tipi-kiki	subst	arroz (composto: grande-semente)
+kiki-ninu	subst	feijão (composto: semente-preta)
+mina-ninu	subst	café (composto: água-preta)
+muma-mina	subst	leite (composto: seio-água)
+muma-mina-kuma	subst	queijo (composto: leite-quente)
+tati-mina-pisi	subst	vinho (composto: fruta-água-vermelha)
+kiki-mina-kuma	subst	cerveja (composto: semente-água-fermentada)
+kapu-kasi	subst	vegetal (composto: grama-comida)
+ina-natu	subst	cavalo (composto: ir-animal)
+muma-natu	subst	vaca (composto: seio-animal)
+pupa-natu	subst	porco (composto: gordura-animal)
+kaki-piti	subst	galinha (composto: ovo-ave)
+tutu-natu	subst	ovelha (composto: pelo-animal)
+siku-natu	subst	leão (composto: lutar-animal)
+tipi-tipi-natu	subst	elefante (composto)
+pa-kuka	subst	liberdade (composto: sem-corda)
+muta-ka-patu-i	subst	justiça (composto: verdade-fazer-nominalizado)
+pa-siku	subst	paz (composto: sem-guerra)
+tipi-siku	subst	guerra (composto)
+ipa-tipi-sami	subst	Deus (composto: ser-grande-superlativo)
+pumu-pana	subst	alma (composto: coração-luz)
+nita-mati	subst	espírito (composto: vento-pessoa)
+pita-kama	subst	mente (composto: pensar-casa)
+kupu-tama	subst	número (composto)
+pa-tani	num	zero (composto: não-um)
+sa	adv	mais (intensificador)
+pa-sa	adv	menos (composto)
+kupu-tipi	verbo	somar (composto: contar-grande)
+kupu-puku	verbo	subtrair (composto)
+kupu-matu	verbo	multiplicar (composto)
+kati-tani	subst	norte (composto: estrela-primeira)
+kati-kupa	subst	sul (composto: estrelas-todas)
+pati-ni	subst/prep	frente (composto: olho-de)
+pupi-ni	subst/prep	trás (composto: costas-de)
+miti-ni	subst/prep	cima (composto: cabeça-de)
+puta-ni	subst/prep	baixo (composto: pé-de)
+pa-mipi	prep	fora (composto: não-dentro)
+namu-kupa	subst	roupa (composto: pele-toda)
+miti-namu	subst	chapéu (composto: cabeça-roupa)
+puti-namu	subst	camisa (composto: corpo-roupa)
+tapa-namu	subst	calça (composto: perna-roupa)
+puta-namu	subst	sapato (composto: pé-roupa)
+kanu-puku	subst	dedo (composto: mão-pequena)
+kanu-puku-mana	subst	anel (composto)
+patu-tana	subst	mesa (composto: feita-superfície)
+supu-patu	subst	cadeira (composto: sentar-objeto)
+supi-patu	subst	cama (composto: deitar-objeto)
+kama-munu	subst	porta (composto: casa-boca)
+kama-pati	subst	janela (composto: casa-olho)
+kama-pupi	subst	parede (composto: casa-costas)
+sasi-patu	subst	faca (composto)
+kasi-patu	subst	colher (homônimo cozinheiro; contexto)
+kasi-kiti	subst	garfo (composto)
+kasi-tana	subst	prato (composto)
+mina-kama	subst	copo (composto: água-casa)
+nani-tipi	subst	estrada (composto: caminho-grande)
+nani-tupi	subst	ponte (composto: caminho-rio)
+tipi-masu	subst	tempestade (composto)
+pana-puka	subst	raio (composto: luz-fogo)
+tisi-tama	subst	trovão (composto: céu-voz)
+masu-pana-tipi	subst	arco-íris (composto)
+tasa-masu	subst	granizo (composto)
+tipi-mina	subst	enchente (composto)
+kumu-kapa	subst	seca (composto)
+tana-tasu	subst	terremoto (composto: terra-dança)
+sani-puka	subst	vulcão (composto: montanha-fogo)
+kanu-puku-tani	subst	dedo (mão) primeiro = polegar
+puta-puku	subst	dedo do pé
+mami-puti	subst	ombro (raiz nova)	mami já errado: usa "papu-miti"
+papu-miti	subst	ombro (composto: macho-cabeça do braço)
+kanu-tumi	subst	cotovelo (composto: mão-joelho)
+kanu-supi	subst	pulso (composto)
+puta-tumi	subst	tornozelo (composto: pé-joelho)
+tapa-tipi	subst	coxa (composto: perna-grande)
+tapa-puku	subst	panturrilha (composto: perna-pequena)
+puti-tatu	subst	quadril (composto)
+puti-tipu	subst	costela (composto)
+puti-pupi	subst	espinha (composto)
+mani-pa	subst	fome (composto: comer-NEG existência)
+piku-pa	subst	sede (composto)
+napi-pa	subst	sono (composto)
+puti-muka	subst	dor (composto: corpo-mal)
+puti-tina	subst	conforto (composto)
+pati-mapa	subst	vergonha (composto: olho-velho)
+pumu-tipi-sami	subst	orgulho (composto)
+pumu-naki-tuma	subst	inveja (composto)
+pumu-tati	subst	gratidão (composto: coração-fruto)
+puti-pini	subst	preguiça (composto: corpo-frio)
+pumu-sutu	subst	animação (composto: coração-de-pé)
+kapa-kupa	subst	tédio (composto: tempo-tudo)
+pita-kuti	verbo	lembrar (composto: pensar-voltar)
+pita-pa	verbo	esquecer (composto: pensar-NEG)
+tika-kuti	verbo	reconhecer (composto)
+kima-supa	verbo	entender (composto: saber-chegar)
+muku-pita	verbo	confundir (composto: dividir-pensar)
+naki-pita	verbo	decidir (composto)
+kuta-pita	verbo	escolher (composto: pegar-pensar)
+pa-pita	verbo	hesitar (composto)
+kima-pa	verbo	duvidar (composto)
+pita-pana	verbo	imaginar (composto)
+pita-ka	verbo	planejar (composto: pensar-FUT)
+kima-puku	verbo	suspeitar (composto)
+ama-puna	verbo	ajudar (composto: amar-dar)
+muka-puna	verbo	prejudicar (composto)
+muta-ka-pa	verbo	enganar (composto)
+muku-muka	verbo	perdoar (composto: dividir-mal)
+muka-kuti	verbo	vingar (composto)
+taka-mika	verbo	prometer (composto)
+taka-nipa	verbo	ameaçar (composto)
+taka-tina	verbo	agradecer (composto: dizer-bom)
+taka-muku	verbo	desculpar (composto)
+taka-supa	verbo	cumprimentar (composto)
+supa-kama	verbo	visitar (composto)
+supa-mati	verbo	encontrar (composto)
+ina-taka	verbo	despedir-se (composto)
+tupa-patu	verbo	casar (composto: cônjuge-fazer)
+tupa-muku	verbo	divorciar (composto)
+ama-kapa	verbo	namorar (composto)
+patu-kapa	subst	trabalho (composto: fazer-tempo)
+mapu-mapu	subst	dinheiro (composto: pedra-pedra) — reduplicação
+kuta-mapu	verbo	comprar (composto: pegar-dinheiro)
+puna-mapu	verbo	vender (composto)
+tatu-puna	verbo	trocar (composto)
+mapu-kapa	subst	preço (composto)
+mapu-tipi	subst	lucro (composto)
+mapu-puku	subst	prejuízo (composto)
+mapu-kuti	subst	dívida (composto)
+matu-mapu	adj	rico (composto)
+puku-mapu	adj	pobre (composto)
+muta-ka-tama	subst	lei (composto: verdade-palavra)
+muka-patu	subst	crime (composto: mal-feito)
+sika-mati	subst	polícia (composto)
+mipi-kama	subst	prisão (composto: dentro-casa)
+miti-mati-tipi	subst	governo (composto)
+miti-mati-sami	subst	presidente (composto)
+kuta-pita	subst	eleição (composto: pegar-pensar)
+kuti-pita	verbo	votar (composto: voltar-pensar)
+nani-tana	subst	fronteira (composto: caminho-terra)
+siku-mati-kupa	subst	exército (composto)
+pumu-tama	subst	oração (composto: coração-palavra)
+kina-puna	subst	sacrifício (composto: morrer-dar)
+kapi-patu	subst	ritual (composto: sonhar-fazer)
+ipa-tipi-kama	subst	templo (composto)
+tina-tina	adj	sagrado (reduplicação: bom-bom)
+muka-muka	adj	pecaminoso (reduplicação)
+panu-patu	subst	arte (composto: belo-fazer; dup artista)
+panu-pa	subst	feiura (composto)
+patu-kini	verbo	criar (composto: fazer-novo)
+pita-kini	verbo	inspirar (composto)
+taka-pana	verbo	expressar (composto)
+panu-mina	subst	pintura (composto: bela-água)
+panu-mapu	subst	escultura (composto)
+panu-tasu	subst	dança (composto: bela-dançar)
+panu-tika	subst	teatro (composto: belo-ver)
+pati-tika-kupa	subst	cinema (composto)
+tama-na-patu	subst	música (dup, já tem)
+kuka-tama-na	subst	instrumento musical (composto)
+kapa-tama-na	subst	ritmo (composto: tempo-canção)
+tina-tama-na	subst	melodia (composto)
+kupa-tama-na	subst	harmonia (composto)
+kima-tipi	subst	ciência (composto: saber-grande)
+patu-kima	subst	experimento (dup engenheiro; contexto)
+pita-kima	subst	teoria (composto: pensar-saber)
+pita-puku	subst	hipótese (composto)
+muta-ka-patu-i	subst	prova (dup justiça)
+puku-puku-tipi	subst	átomo (composto: pequeno-pequeno-substância)
+puku-tipi	subst	molécula (composto)
+puti-kupa	subst	elemento (composto)
+puka-pumu	subst	energia (composto: fogo-coração)
+musu-tipi	subst	força (composto)
+tana-musu	subst	gravidade (composto: terra-puxar)
+puka-pami	subst	eletricidade (dup acima)
+kuma	subst	calor (dup adj)
+tipi-pa	subst	doença (composto: bem-NEG)
+puti-tina	subst	saúde (dup conforto)
+naka-tipi	subst	remédio (composto: limpar-grande)
+ipa-tipi-kama	subst	hospital (dup templo; contexto)
+puti-kuma	subst	febre (composto)
+nasi-tipi	subst	tosse (composto: respirar-grande)
+puti-sasi	subst	ferida (composto)
+nuku-tipi	subst	infecção (composto: verme-grande)
+puti-pa	subst	vacina (composto: corpo-prevenção)
+tupu	subst	esporte (já verbo jogar)
+tupu-mati	subst	time (composto)
+sami-patu	verbo	vencer (composto: melhor-fazer)
+pa-sami	verbo	perder (composto)
+tani-tani-patu	verbo	empatar (composto: igual-fazer)
+puta-tupu	subst	futebol (composto: pé-jogo)
+puta-sipa-tipi	subst	corrida (composto)
+sutu-tipi	subst	salto (composto: levantar-grande)
+saku-tupu	subst	natação competitiva (composto)
+kima-kama	subst	escola (composto: saber-casa)
+kima-puna	subst	professor (dup acima)
+kima-kuta	subst	aluno (dup acima)
+tama-naku	subst	livro (composto: palavra-raiz)
+tama-naku-puku	subst	lição (composto)
+tika-tama	verbo	ler (composto: ver-palavra)
+patu-tama	verbo	escrever (composto: fazer-palavra)
+kima-kapa	verbo	estudar (composto: saber-tempo)
+kima-puna	verbo	ensinar (homônimo)
+kima-kuta	verbo	aprender (homônimo)
+kima-tika	verbo	examinar (composto: saber-ver)
