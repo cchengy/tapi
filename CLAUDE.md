@@ -16,9 +16,21 @@ No build, no test suite, no package manager. All scripts use Python 3 stdlib onl
 # Conjugate a verbal root (prints full tense × aspect table + evidentials)
 python3 conjugador.py <raiz>           # e.g. python3 conjugador.py ama
 
-# Word-by-word translation against lexico.tsv
+# Translation against lexico.tsv (with morphological analysis Tapi→PT:
+# detects -ta/-ka tense, -sa/-ma/-pa aspect, evidentials -ni/-ni-ni/-ni-ku,
+# imperative -ti, voz média -ku, plural -n, and composto decomposition)
 python3 tradutor.py pt2tapi "casa do pai"
-python3 tradutor.py tapi2pt "kama ni papi"
+python3 tradutor.py tapi2pt "mi manita kasi tina"
+
+# REST API (localhost, stdlib only) — endpoints /health /conjugate /lookup /translate
+python3 api.py 8080 127.0.0.1
+# curl http://localhost:8080/conjugate?raiz=ama
+# curl 'http://localhost:8080/translate?direction=tapi2pt&text=mi+manita'
+
+# Generate audio samples via macOS `say` (9 phonemes + 18 syllables + 50 words → audio/)
+python3 gerar_audio.py                  # default voice: Luciana (pt-BR)
+python3 gerar_audio.py --list-voices    # list available voices
+python3 gerar_audio.py --voice Felipe   # use specific voice
 
 # Regenerate anki_tapi.tsv from lexico.tsv (run after lexicon edits)
 python3 gerar_anki.py

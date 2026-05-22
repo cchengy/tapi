@@ -2,6 +2,15 @@
 
 Formato: [versão] - data - mudanças.
 
+## [v0.7.1] - 2026-05-22
+
+### Adicionado
+- `tradutor.py` melhorado: detecta sufixos verbais (-ta/-ka/-sa/-ma/-pa), evidenciais (-ni, -ni-ni, -ni-ku), imperativo (-ti), voz média (-ku), plural (-n) e decompõe compostos hifenizados. Saída agora marca morfologia: `mi manita kasi` → `[eu] [comer.passado] [comida]`.
+- `api.py`: REST mínima em stdlib. Rotas `/health`, `/conjugate?raiz=X`, `/lookup?word=X`, `/translate?direction=Y&text=Z`. Default bind: localhost.
+- `gerar_audio.py`: gera amostras TTS via macOS `say`. 9 fonemas + 18 sílabas CV + 50 palavras-amostra distribuídas → `audio/` + `audio/manifest.tsv`.
+- `CLAUDE.md`: seção Commands atualizada com os 3 novos scripts.
+- `ROADMAP.md`: v0.7 reorganizado, v0.8 redefinido com foco em camada IA, métricas atualizadas, estratégia de prioridades documentada.
+
 ## [v0.7] - 2026-05-22
 
 ### Adicionado
