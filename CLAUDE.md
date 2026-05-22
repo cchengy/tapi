@@ -22,6 +22,9 @@ python3 tradutor.py tapi2pt "kama ni papi"
 
 # Regenerate anki_tapi.tsv from lexico.tsv (run after lexicon edits)
 python3 gerar_anki.py
+
+# Regenerate dicionario_pt_tapi.md from lexico.tsv (run after lexicon edits)
+python3 gerar_dicionario_pt.py
 ```
 
 The static site lives in `docs/` and is served as plain HTML/CSS/JS — open `docs/index.html` directly in a browser, or rely on GitHub Pages (`docs/CNAME` = tapilang.com). No build step.
@@ -34,7 +37,7 @@ The static site lives in `docs/` and is served as plain HTML/CSS/JS — open `do
 
 - `tradutor.py` loads `lexico.tsv` and builds both directions (Tapi↔PT) in memory each run. The PT key is `significado.split(" (")[0].strip().lower()` — anything before a parenthetical gloss.
 - `gerar_anki.py` reads `lexico.tsv`, skips entries whose `palavra` starts or ends with `-` (affixes), and writes `anki_tapi.tsv`. Regenerate after every lexicon edit.
-- `dicionario_pt_tapi.md` is a hand-maintained reverse dictionary that must be updated **in lockstep** with `lexico.tsv` (see CONTRIBUTING.md). Adding a word in only one place is a bug.
+- `gerar_dicionario_pt.py` reads `lexico.tsv` and writes `dicionario_pt_tapi.md`. The reverse dictionary is now **auto-generated** — do not edit it by hand. Regenerate after every lexicon edit. Splits Portuguese keys on `/` so a single Tapi entry like `meaning_a / meaning_b` produces two reverse entries.
 
 ### Conjugation model (encoded in `conjugador.py`)
 

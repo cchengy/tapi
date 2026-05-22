@@ -10,7 +10,8 @@ Tapi é projeto aberto. Toda contribuição é bem-vinda.
 3. Verificar **não-colisão** com raízes/partículas existentes
 4. Preferir **composição** sobre raiz nova (compostos com hífen são livres)
 5. Adicionar linha em `lexico.tsv` com formato: `palavra<TAB>classe<TAB>significado<TAB>notas`
-6. Adicionar entrada correspondente em `dicionario_pt_tapi.md`
+6. Rodar `python3 gerar_dicionario_pt.py` (regenera dicionário reverso a partir de `lexico.tsv` — **não editar `dicionario_pt_tapi.md` à mão**)
+7. Rodar `python3 gerar_anki.py` (regenera deck Anki)
 
 ### Corrigir erro
 - Léxico inconsistente: abrir issue ou PR com correção
@@ -81,6 +82,7 @@ cd tapi
 python3 conjugador.py ama
 python3 tradutor.py pt2tapi "casa"
 python3 gerar_anki.py
+python3 gerar_dicionario_pt.py
 ```
 
 ## Contato
