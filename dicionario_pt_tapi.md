@@ -8,6 +8,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 
 | Português | Tapi | Classe |
 |-----------|------|--------|
+| abbiocco | mani-napi | subst |
 | acordo | tatu-naki | subst |
 | acusado | muka-mati | subst |
 | acusação | muka-taka | subst |
@@ -41,6 +42,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | apertar | mimu | verbo |
 | aplicativo | patu-puku | subst |
 | aprender | kima-kuta | verbo |
+| apricity | papa-kata-tasi | subst |
 | aquela | maku | dem |
 | aquele | maku | dem |
 | aqui | muta | dem |
@@ -95,6 +97,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | cabeça | miti | subst |
 | cachorro | kani | subst |
 | cadeira | supu-patu | subst |
+| cafuné | tutu-ama | subst |
 | café | mina-ninu | subst |
 | cair | kata | verbo |
 | calor | kuma | subst |
@@ -200,7 +203,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | dar à luz | sasu | verbo |
 | de | ni | part |
 | decidir | naki-pita | verbo |
-| dedo | kanu-puku / kanu-puku-tani | subst |
+| dedo | kanu-puku | subst |
 | dedo do pé | puta-puku | subst |
 | defesa | pa-muka-taka | subst |
 | deitar | supi | verbo |
@@ -228,6 +231,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | dormir | napi | verbo |
 | dourado | tunu-mumu | adj |
 | duvidar | kima-pa | verbo |
+| dépaysement | pumu-pami | subst |
 | dívida | mapu-kuti | subst |
 
 ## E
@@ -308,6 +312,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | feiura | panu-pa | subst |
 | felicidade | pumu-tina | subst |
 | ferida | puti-sasi | subst |
+| fernweh | kana-naki | subst |
 | ficar de pé | sutu | verbo |
 | filho | kuni | subst |
 | fino | pisu | adj |
@@ -339,6 +344,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | garfo | kasi-kiti | subst |
 | garra | kiti | subst |
 | gelo | tasa | subst |
+| gezellig | kami-tina | adj |
 | ginecologista | kima-puti-mumi | subst |
 | ginásio | puti-kama | subst |
 | girar | tuti | verbo |
@@ -367,12 +373,14 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | hoje | mata-nupa | subst |
 | homem | papu | subst |
 | hospital | ipa-tipi-kama | subst |
+| hygge | kama-pumu-tina | subst |
 
 ## I
 
 | Português | Tapi | Classe |
 |-----------|------|--------|
 | idioma tapi | tapi | subst |
+| iktsuarpok | supa-naki-nipa | subst |
 | imaginar | pita-pana | verbo |
 | imperativo | -ti | suf |
 | inchar | kasa | verbo |
@@ -400,15 +408,23 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | joelho | tumi | subst |
 | jogador | tupu-mati | subst |
 | jogar | tupu | verbo |
+| jugaad | kini-patu-puku | subst |
 | juiz | muta-ka-patu | subst |
 | justiça | muta-ka-patu-i | subst |
 | júri | muta-ka-mati-n | subst |
+
+## K
+
+| Português | Tapi | Classe |
+|-----------|------|--------|
+| komorebi | tunu-papa-pana | subst |
 
 ## L
 
 | Português | Tapi | Classe |
 |-----------|------|--------|
 | lago | kisa | subst |
+| lagom | pa-matu-pa-puku | adj |
 | lançar | sini | verbo |
 | laranja | pisi-mumu | adj |
 | largo | pumi | adj |
@@ -441,6 +457,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | Português | Tapi | Classe |
 |-----------|------|--------|
 | mais | sa | adv |
+| mamihlapinatapai | tatu-tika-naki-pa | subst |
 | manhã | tunu-una | subst |
 | mar | sapu | subst |
 | maratona | puta-sipa-tipi-pami | subst |
@@ -456,8 +473,10 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | menos | pa-sa | adv |
 | mensagem | tama-puna | subst |
 | mente | pita-kama | subst |
+| meraki | kapi-tipi | subst |
 | mesa | patu-tana | subst |
 | mil | tikuna | num |
+| mokita | pita-pa-supa | subst |
 | molhado | nama | adj |
 | molécula | puku-tipi | subst |
 | montanha | sani | subst |
@@ -470,9 +489,9 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | mundo | nuki | subst |
 | mãe | mama | subst |
 | mão | kanu | subst |
+| mångata | mata-pi-kana | subst |
 | médico | kima-puti | subst |
 | mês | pinu-kapa | subst |
-| música | tama-na-patu | subst |
 | músico | tama-na-patu | subst |
 
 ## N
@@ -492,6 +511,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | norte | kati-tani | subst |
 | nove | pina | num |
 | novo | kini | adj |
+| nunchi | tika-pumu-mati | subst |
 | nuvem | satu | subst |
 | névoa | kisi | subst |
 | nós | nupi | pron |
@@ -507,7 +527,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | oito | nu | num |
 | olho | pati | subst |
 | olimpíada | tupu-kupa-tipi | subst |
-| ombro | mami-puti / papu-miti | subst |
+| ombro | papu-miti | subst |
 | onde | nika | int |
 | online | tama-kupa-mipi | prep |
 | ontem | nupa-maku-ta | subst |
@@ -567,6 +587,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | poder | puni | verbo |
 | podre | taki | adj |
 | poeira | kisu | subst |
+| polegar | kanu-puku-tani | subst |
 | polícia | sika-mati | subst |
 | ponte | nani-tupi | subst |
 | por que | nima-tu | int |
@@ -597,7 +618,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | prova | muta-ka-patu-i | subst |
 | publicação | tama-puna-kupa | subst |
 | pulmão | nasi-pumu | subst |
-| pulso | kanu-supi / kunu-kapa | subst |
+| pulso | kanu-pumu | subst |
 | puxar | musu | verbo |
 | pão | kasi-tani | subst |
 | pé | puta | subst |
@@ -627,6 +648,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | raio | pana-puka | subst |
 | raiva | pumu-puka | subst |
 | raiz | naku | subst |
+| razliubít | napi-tipi-pa | subst |
 | receber | kuta | verbo |
 | reconhecer | tika-kuti | verbo |
 | recorde | sami-tupu-i | subst |
@@ -663,7 +685,9 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | salto | sutu-tipi | subst |
 | sangue | kunu | subst |
 | sapato | puta-namu | subst |
+| saudade | pumu-kana | subst |
 | saúde | puti-tina | subst |
+| schadenfreude | tasi-muka | subst |
 | se | asi | conj |
 | seca | kumu-kapa | subst |
 | seco | kumu | adj |
@@ -683,8 +707,11 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | ser | ipa | verbo |
 | sete | nuku | num |
 | sexta | nupa-ma | subst |
+| shemomedjamo | mani-pa-naki-tina | subst |
 | sintoma | puti-tika | subst |
+| sisu | pumu-puta | subst |
 | site | tama-kama | subst |
+| sobremesa | mani-pa-taka-kapa | subst |
 | sobrinha | kuni-mumi | subst |
 | sobrinho | kuni-papu | subst |
 | sogra | tupa-ni-mama | subst |
@@ -724,6 +751,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | terça | nupa-ti | subst |
 | testemunha | tika-mati | subst |
 | testemunho | taka-tika | subst |
+| thalassophilia | sapu-naki | subst |
 | tia | suna | subst |
 | time | tupu-mati | subst |
 | tio | sana | subst |
@@ -731,6 +759,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | tontura | puti-tuti | subst |
 | tornar-se | ipi | verbo |
 | tornozelo | puta-tumi | subst |
+| toska | pumu-pa-kima | subst |
 | tosse | nasi-tipi | subst |
 | trabalho | patu-kapa | subst |
 | transmissão | puna-kupa | subst |
@@ -745,6 +774,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | trovão | tisi-tama | subst |
 | trás | pupi-ni | subst/prep |
 | três | ti | num |
+| tsundoku | tama-naku-kuta-pa-tika | subst |
 | tu | tu | pron |
 | tudo | kupa / mata-mati | pron-indef, quant |
 | tédio | kapa-kupa | subst |
@@ -757,6 +787,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | um | tani | num |
 | unha | kiti | subst |
 | usuário | kupu-mapu-mati | subst |
+| utepils | kapi-pami | subst |
 
 ## V
 
@@ -800,7 +831,16 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 
 | Português | Tapi | Classe |
 |-----------|------|--------|
+| wabi-sabi | panu-mapa-kata | subst |
+| waldeinsamkeit | puma-tani-i | subst |
+| wanderlust | pumu-ina | subst |
 | wifi | tama-kupa-nita | subst |
+
+## Y
+
+| Português | Tapi | Classe |
+|-----------|------|--------|
+| ya'aburnee | pati-tika-pumu | subst |
 
 ## Z
 

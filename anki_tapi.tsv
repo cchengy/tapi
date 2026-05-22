@@ -404,12 +404,11 @@ enchente (composto)	tipi-mina	subst	tapi subst
 seca (composto)	kumu-kapa	subst	tapi subst
 terremoto (composto: terra-dança)	tana-tasu	subst	tapi subst
 vulcão (composto: montanha-fogo)	sani-puka	subst	tapi subst
-dedo (mão) primeiro = polegar	kanu-puku-tani	subst	tapi subst
+polegar (composto: mão-pequeno-um; primeiro dedo)	kanu-puku-tani	subst	tapi subst
 dedo do pé	puta-puku	subst	tapi subst
-ombro (raiz nova)	mami-puti	subst	tapi subst
 ombro (composto: macho-cabeça do braço)	papu-miti	subst	tapi subst
 cotovelo (composto: mão-joelho)	kanu-tumi	subst	tapi subst
-pulso (composto)	kanu-supi	subst	tapi subst
+pulso (composto: mão-coração; batida do coração na mão)	kanu-pumu	subst	tapi subst
 tornozelo (composto: pé-joelho)	puta-tumi	subst	tapi subst
 coxa (composto: perna-grande)	tapa-tipi	subst	tapi subst
 panturrilha (composto: perna-pequena)	tapa-puku	subst	tapi subst
@@ -483,7 +482,7 @@ ritual (composto: sonhar-fazer)	kapi-patu	subst	tapi subst
 templo (composto)	ipa-tipi-kama	subst	tapi subst
 sagrado (reduplicação: bom-bom)	tina-tina	adj	tapi adj
 pecaminoso (reduplicação)	muka-muka	adj	tapi adj
-arte (composto: belo-fazer; dup artista)	panu-patu	subst	tapi subst
+arte (composto: belo-fazer; polissemia com artista)	panu-patu	subst	tapi subst
 feiura (composto)	panu-pa	subst	tapi subst
 criar (composto: fazer-novo)	patu-kini	verbo	tapi verbo
 inspirar (composto)	pita-kini	verbo	tapi verbo
@@ -493,28 +492,26 @@ escultura (composto)	panu-mapu	subst	tapi subst
 dança (composto: bela-dançar)	panu-tasu	subst	tapi subst
 teatro (composto: belo-ver)	panu-tika	subst	tapi subst
 cinema (composto)	pati-tika-kupa	subst	tapi subst
-música (dup, já tem)	tama-na-patu	subst	tapi subst
 instrumento musical (composto)	kuka-tama-na	subst	tapi subst
 ritmo (composto: tempo-canção)	kapa-tama-na	subst	tapi subst
 melodia (composto)	tina-tama-na	subst	tapi subst
 harmonia (composto)	kupa-tama-na	subst	tapi subst
 ciência (composto: saber-grande)	kima-tipi	subst	tapi subst
-experimento (dup engenheiro; contexto)	patu-kima	subst	tapi subst
+experimento (composto: fazer-saber; polissemia com engenheiro)	patu-kima	subst	tapi subst
 teoria (composto: pensar-saber)	pita-kima	subst	tapi subst
 hipótese (composto)	pita-puku	subst	tapi subst
-prova (dup justiça)	muta-ka-patu-i	subst	tapi subst
+prova (composto: verdade-fazer; polissemia com justiça)	muta-ka-patu-i	subst	tapi subst
 átomo (composto: pequeno-pequeno-substância)	puku-puku-tipi	subst	tapi subst
 molécula (composto)	puku-tipi	subst	tapi subst
 elemento (composto)	puti-kupa	subst	tapi subst
 energia (composto: fogo-coração)	puka-pumu	subst	tapi subst
 força (composto)	musu-tipi	subst	tapi subst
 gravidade (composto: terra-puxar)	tana-musu	subst	tapi subst
-eletricidade (dup acima)	puka-pami	subst	tapi subst
 calor (dup adj)	kuma	subst	tapi subst
 doença (composto: bem-NEG)	tipi-pa	subst	tapi subst
-saúde (dup conforto)	puti-tina	subst	tapi subst
+saúde (composto: corpo-bom; polissemia com conforto)	puti-tina	subst	tapi subst
 remédio (composto: limpar-grande)	naka-tipi	subst	tapi subst
-hospital (dup templo; contexto)	ipa-tipi-kama	subst	tapi subst
+hospital (polissemia com templo; resolver por contexto)	ipa-tipi-kama	subst	tapi subst
 febre (composto)	puti-kuma	subst	tapi subst
 tosse (composto: respirar-grande)	nasi-tipi	subst	tapi subst
 ferida (composto)	puti-sasi	subst	tapi subst
@@ -530,8 +527,6 @@ corrida (composto)	puta-sipa-tipi	subst	tapi subst
 salto (composto: levantar-grande)	sutu-tipi	subst	tapi subst
 natação competitiva (composto)	saku-tupu	subst	tapi subst
 escola (composto: saber-casa)	kima-kama	subst	tapi subst
-professor (dup acima)	kima-puna	subst	tapi subst
-aluno (dup acima)	kima-kuta	subst	tapi subst
 livro (composto: palavra-raiz)	tama-naku	subst	tapi subst
 lição (composto)	tama-naku-puku	subst	tapi subst
 ler (composto: ver-palavra)	tika-tama	verbo	tapi verbo
@@ -572,7 +567,6 @@ alergia (composto: corpo-mal-fruta)	puti-muka-tati	subst	tapi subst
 sintoma (composto: corpo-visto)	puti-tika	subst	tapi subst
 diagnóstico (composto: saber-doença)	kima-tipi-pa	subst	tapi subst
 prescrição (composto: dizer-remédio)	taka-naka	subst	tapi subst
-pulso (composto: sangue-tempo)	kunu-kapa	subst	tapi subst
 pressão arterial (composto: sangue-força)	kunu-musu	subst	tapi subst
 veia (composto: sangue-caminho)	kunu-nani	subst	tapi subst
 artéria (composto: veia-grande)	kunu-nani-tipi	subst	tapi subst
@@ -659,3 +653,33 @@ internauta (composto)	tama-kupa-mati	subst	tapi subst
 tempo online (composto)	tama-kupa-kapa	subst	tapi subst
 online (composto: internet-dentro)	tama-kupa-mipi	prep	tapi prep
 offline (composto)	tama-kupa-pa-mipi	prep	tapi prep
+saudade (composto: coração-longe; do português)	pumu-kana	subst	tapi subst
+schadenfreude (composto: rir-mal; do alemão)	tasi-muka	subst	tapi subst
+komorebi (composto: sol-folha-luz; do japonês — sol filtrado por folhas)	tunu-papa-pana	subst	tapi subst
+wabi-sabi (composto: belo-velho-cair; do japonês — beleza do imperfeito/transitório)	panu-mapa-kata	subst	tapi subst
+hygge (composto: casa-coração-bem; do dinamarquês — aconchego compartilhado)	kama-pumu-tina	subst	tapi subst
+lagom (composto: não-muito-não-pouco; do sueco — equilíbrio justo)	pa-matu-pa-puku	adj	tapi adj
+nunchi (composto: ver-coração-pessoa; do coreano — ler ambiente social)	tika-pumu-mati	subst	tapi subst
+toska (composto: coração-NEG-saber; do russo — melancolia espiritual profunda)	pumu-pa-kima	subst	tapi subst
+iktsuarpok (composto: chegar-querer-medo; do inuíte — ansiedade ao esperar visita)	supa-naki-nipa	subst	tapi subst
+mamihlapinatapai (composto: mútuo-ver-querer-NEG; do yagán — olhar mútuo esperando iniciativa)	tatu-tika-naki-pa	subst	tapi subst
+fernweh (composto: longe-querer; do alemão — saudade de lugar não-visitado)	kana-naki	subst	tapi subst
+waldeinsamkeit (composto: floresta-só-NOM; do alemão — solidão da floresta)	puma-tani-i	subst	tapi subst
+tsundoku (composto: livro-comprar-NEG-ler; do japonês — comprar livro e não ler)	tama-naku-kuta-pa-tika	subst	tapi subst
+sisu (composto: coração-firmeza; do finlandês — resiliência teimosa)	pumu-puta	subst	tapi subst
+cafuné (composto: cabelo-amor; do português — carinho na cabeça)	tutu-ama	subst	tapi subst
+sobremesa (composto: comer-acabar-falar-tempo; do espanhol — conversa pós-refeição)	mani-pa-taka-kapa	subst	tapi subst
+jugaad (composto: novo-fazer-pequeno; do hindi — improvisação criativa)	kini-patu-puku	subst	tapi subst
+abbiocco (composto: comer-sono; do italiano — sonolência pós-refeição)	mani-napi	subst	tapi subst
+gezellig (composto: com-bom; do holandês — aconchego social)	kami-tina	adj	tapi adj
+shemomedjamo (composto: comer-sem-querer-bom; do georgiano — comi sem querer, estava bom)	mani-pa-naki-tina	subst	tapi subst
+wanderlust (composto: coração-ir; do alemão — vontade de viajar)	pumu-ina	subst	tapi subst
+thalassophilia (composto: mar-querer; do grego — amor pelo mar)	sapu-naki	subst	tapi subst
+mångata (composto: noite-longa; do sueco — reflexo lunar no mar)	mata-pi-kana	subst	tapi subst
+apricity (composto: folha-cair-calor; do inglês arcaico — calor do sol no inverno)	papa-kata-tasi	subst	tapi subst
+"ya'aburnee (composto: olho-ver-coração; do árabe — ""que tu me enterres"" — amor de não querer sobreviver ao outro)"	pati-tika-pumu	subst	tapi subst
+meraki (composto: sonho-grande; do grego — fazer algo com toda a alma)	kapi-tipi	subst	tapi subst
+mokita (composto: pensar-NEG-chegar; do papua — verdade que todos sabem mas ninguém fala)	pita-pa-supa	subst	tapi subst
+dépaysement (composto: coração-longo; do francês — sensação de estar em terra estrangeira)	pumu-pami	subst	tapi subst
+utepils (composto: descansar-longo; do norueguês — cerveja ao ar livre num dia ensolarado)	kapi-pami	subst	tapi subst
+razliubít (composto: dormir-amor-NEG; do russo — sentir desaparecer um amor)	napi-tipi-pa	subst	tapi subst

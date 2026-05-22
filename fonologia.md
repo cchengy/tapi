@@ -27,11 +27,14 @@
 ## Fonotática
 
 ### Raízes
-- Estrutura: **CV.CV** (estrito)
+- Estrutura padrão: **CV.CV** (estrito)
 - Toda raiz = exatamente 2 sílabas
 - Onset obrigatório em ambas sílabas
 - Sem coda nas raízes
 - Sem hiato (vogais adjacentes proibidas)
+
+### Exceção: verbos primários V.CV
+Cinco verbos básicos universais escapam da exigência de onset na primeira sílaba: `ipa` (ser/estar), `ipi` (tornar-se), `ama` (amar), `ina` (ir), `una` (vir). Justificativa: são funções gramaticais ultra-frequentes em todas as línguas humanas; raízes V.CV economizam sílaba sem perder pronunciabilidade. Lista é **fechada** — nenhuma raiz V.CV nova pode ser adicionada.
 
 ### Sufixos gramaticais
 - CV bissilábico padrão (-ta, -ka, -sa, -ma, -pa, -ti, -ku)

@@ -2,6 +2,17 @@
 
 Formato: [versão] - data - mudanças.
 
+## [v0.7] - 2026-05-22
+
+### Adicionado
+- `palavras_intraduziveis.md`: catálogo curado de 30 conceitos "intraduzíveis" em vários idiomas (saudade, schadenfreude, komorebi, wabi-sabi, hygge, lagom, nunchi, toska, iktsuarpok, mamihlapinatapai, fernweh, waldeinsamkeit, tsundoku, sisu, cafuné, sobremesa, jugaad, abbiocco, gezellig, shemomedjamo, wanderlust, thalassophilia, mångata, apricity, ya'aburnee, meraki, mokita, dépaysement, utepils, razliubít) resolvidos por composição transparente — sem novas raízes.
+- `lexico.tsv`: +30 compostos correspondentes (todos validados: peças = raízes existentes, fonologia CV.CV limpa).
+- `manual.md`: expandido de 10 para 20 lições. Novas lições 11-20 cobrem causativo, voz passiva, evidencialidade, honoríficos, subordinação, comparativo, numerais avançados, calendário, conversação, criação de palavras.
+
+### Regenerado
+- `anki_tapi.tsv` (690 cartões)
+- `dicionario_pt_tapi.md` (719 entradas)
+
 ## [v0.6.1] - 2026-05-22
 
 ### Adicionado
