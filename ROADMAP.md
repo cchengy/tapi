@@ -31,7 +31,8 @@
 ## v0.7 — Médio prazo (3 meses)
 
 ### Ferramentas
-- [ ] Conjugador online (página web JavaScript)
+- [x] Conjugador online standalone (`docs/conjugador.html`) — evidenciais, copy, validação
+- [x] Gerador automático de `dicionario_pt_tapi.md` (`gerar_dicionario_pt.py`)
 - [ ] Tradutor automático melhorado (com regras gramaticais básicas)
 - [ ] API REST: `/conjugate`, `/translate`, `/lookup`
 - [ ] Wiki colaborativa (Wikidot ou MediaWiki)

@@ -2,6 +2,18 @@
 
 Formato: [versão] - data - mudanças.
 
+## [v0.6.1] - 2026-05-22
+
+### Adicionado
+- `gerar_dicionario_pt.py`: script que regenera `dicionario_pt_tapi.md` automaticamente a partir de `lexico.tsv`. Resolve a sincronização manual que existia. Dicionário reverso passa de 366 entradas hand-maintained para 689 auto-geradas.
+- `docs/conjugador.html`: página standalone do conjugador. Adiciona evidenciais (direto, inferido, reportado, duvidoso), botão copiar tudo, click-to-copy por célula, validação CV.CV, suporte a `?r=<raiz>` na URL, link no `docs/index.html`.
+
+### Mudado
+- `dicionario_pt_tapi.md` agora é arquivo gerado. **Não editar à mão** — editar `lexico.tsv` e rodar `python3 gerar_dicionario_pt.py`.
+
+### Relicenciado
+- Licença mudou de CC-BY-SA 4.0 para **MIT** (mais permissiva; sem cláusula ShareAlike).
+
 ## [v0.6] - 2026-05-22
 
 ### Adicionado

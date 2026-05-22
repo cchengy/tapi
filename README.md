@@ -52,6 +52,8 @@ Repositório: [github.com/cchengy/tapi](https://github.com/cchengy/tapi)
 | [conjugador.py](conjugador.py) | Gera todas formas verbais de uma raiz |
 | [tradutor.py](tradutor.py) | Tradução palavra-a-palavra pt↔Tapi |
 | [gerar_anki.py](gerar_anki.py) | Gera deck Anki (TSV) do léxico |
+| [gerar_dicionario_pt.py](gerar_dicionario_pt.py) | Gera `dicionario_pt_tapi.md` a partir de `lexico.tsv` |
+| [docs/conjugador.html](docs/conjugador.html) | Conjugador web standalone (evidenciais, copy, validação) |
 
 ### Meta
 | Arquivo | Conteúdo |

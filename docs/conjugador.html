@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tapi — Conjugador completo</title>
+<meta name="description" content="Conjugador completo de verbos Tapi: tempo, aspecto, evidencialidade, imperativo, voz média.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .tool .row { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: end; }
+  .tool .row button { padding: 10px 18px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-soft); color: var(--fg); cursor: pointer; font-family: inherit; font-size: 0.95rem; }
+  .tool .row button:hover { border-color: var(--accent); }
+  .tool input.invalid { border-color: #ef4444; }
+  .grid-conj {
+    display: grid;
+    grid-template-columns: 120px repeat(4, 1fr);
+    gap: 4px;
+    margin-top: 16px;
+    background: var(--code-bg);
+    padding: 16px;
+    border-radius: 10px;
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 0.92rem;
+  }
+  .grid-conj .h { color: var(--fg); font-weight: 600; }
+  .grid-conj .l { color: var(--fg-soft); }
+  .grid-conj .v { color: #b794f4; }
+  .grid-conj .v:hover { color: #fde68a; cursor: pointer; }
+  .meta-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; margin-top: 16px; background: var(--code-bg); padding: 16px; border-radius: 10px; font-family: ui-monospace, Menlo, monospace; font-size: 0.92rem; }
+  .meta-list .k { color: var(--fg-soft); }
+  .meta-list .vv { color: #b794f4; }
+  .err { color: #ef4444; margin-top: 8px; font-size: 0.9rem; }
+  .ok { color: #10b981; margin-top: 8px; font-size: 0.9rem; }
+  .examples { color: var(--fg-soft); font-size: 0.9rem; margin-top: 8px; }
+  .examples code { background: var(--code-bg); padding: 2px 6px; border-radius: 4px; color: var(--fg); cursor: pointer; }
+  .examples code:hover { color: var(--accent); }
+  .nav-back { display: inline-block; margin-top: 12px; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>Conjugador Tapi</h1>
+  <p class="tagline">Digite uma raiz verbal. Veja todas as formas.</p>
+  <p class="sub"><a href="index.html" class="nav-back">← Voltar à página inicial</a></p>
+</header>
+
+<main>
+
+<section>
+  <div class="tool">
+    <label for="root">Raiz verbal</label>
+    <div class="row">
+      <input id="root" type="text" placeholder="ex: ama, tika, ina, taka" autocomplete="off" autofocus>
+      <button id="copy-btn">Copiar tudo</button>
+    </div>
+    <div id="status"></div>
+    <p class="examples">Exemplos: <code data-ex="ama">ama</code> <code data-ex="tika">tika</code> <code data-ex="ina">ina</code> <code data-ex="taka">taka</code> <code data-ex="kima">kima</code> <code data-ex="patu">patu</code> <code data-ex="napi">napi</code></p>
+  </div>
+</section>
+
+<section>
+  <h2>Tempo × Aspecto</h2>
+  <div id="grid-out" class="grid-conj"></div>
+</section>
+
+<section>
+  <h2>Outras formas</h2>
+  <div id="meta-out" class="meta-list"></div>
+</section>
+
+<section>
+  <h2>Evidencialidade (sobre passado simples)</h2>
+  <div id="evid-out" class="meta-list"></div>
+</section>
+
+<section>
+  <h2>Como funciona</h2>
+  <p>Uma raiz verbal Tapi recebe sufixos em ordem fixa:</p>
+  <ul style="color: var(--fg-soft);">
+    <li><strong>Tempo</strong>: presente (∅), <code>-ta</code> passado, <code>-ka</code> futuro</li>
+    <li><strong>Aspecto</strong>: simples (∅), <code>-sa</code> habitual, <code>-ma</code> progressivo, <code>-pa</code> perfectivo</li>
+    <li><strong>Evidencial</strong> (opcional): direto (∅), <code>-ni</code> inferido, <code>-ni-ni</code> reportado, <code>-ni-ku</code> duvidoso</li>
+    <li><strong>Especiais</strong>: imperativo <code>raiz-ti</code>, voz média/reflexivo <code>raiz-ku</code></li>
+  </ul>
+  <p>Raiz precisa usar apenas <code>p t k m n s</code> + <code>a i u</code>, estrutura CV.CV.</p>
+  <p>Veja <a href="https://github.com/cchengy/tapi/blob/main/conjugacao.md">conjugacao.md</a> para tabela completa.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>tapi · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT</p>
+</footer>
+
+<script>
+(function () {
+  const TEMPOS = [
+    ["presente", ""],
+    ["passado", "ta"],
+    ["futuro", "ka"],
+  ];
+  const ASPECTOS = [
+    ["simples", ""],
+    ["habitual", "sa"],
+    ["progressivo", "ma"],
+    ["perfectivo", "pa"],
+  ];
+  const EVIDENCIAIS = [
+    ["direto", ""],
+    ["inferido", "-ni"],
+    ["reportado", "-ni-ni"],
+    ["duvidoso", "-ni-ku"],
+  ];
+
+  const PHONO = /^[ptkmns][aiu][ptkmns][aiu]$/;
+  const PHONO_LOOSE = /^[ptkmnsaiu]+$/;
+
+  const $ = (s) => document.querySelector(s);
+  const input = $("#root");
+  const status = $("#status");
+  const grid = $("#grid-out");
+  const meta = $("#meta-out");
+  const evid = $("#evid-out");
+  const copyBtn = $("#copy-btn");
+
+  function validate(raiz) {
+    if (!raiz) return { ok: false, msg: "" };
+    if (!PHONO_LOOSE.test(raiz)) {
+      return { ok: false, msg: "Use apenas p, t, k, m, n, s, a, i, u." };
+    }
+    if (!PHONO.test(raiz)) {
+      return {
+        ok: true,
+        warn: "Não é raiz CVCV estrita. Conjuga mesmo assim.",
+      };
+    }
+    return { ok: true };
+  }
+
+  function render(raiz) {
+    grid.innerHTML = "";
+    meta.innerHTML = "";
+    evid.innerHTML = "";
+
+    const cells = [];
+    cells.push(["h", "Tempo"]);
+    for (const [an] of ASPECTOS) cells.push(["h", an]);
+    for (const [tn, ts] of TEMPOS) {
+      cells.push(["l", tn]);
+      for (const [, as] of ASPECTOS) {
+        cells.push(["v", raiz + ts + as]);
+      }
+    }
+    for (const [cls, text] of cells) {
+      const d = document.createElement("div");
+      d.className = cls;
+      d.textContent = text;
+      if (cls === "v") {
+        d.title = "Clique para copiar";
+        d.addEventListener("click", () => copyText(text));
+      }
+      grid.appendChild(d);
+    }
+
+    const extras = [
+      ["imperativo", raiz + "-ti"],
+      ["voz média / reflexivo", raiz + "-ku"],
+      ["nominalizado (gerúndio)", raiz + "-i"],
+      ["passado perfectivo", raiz + "tapa"],
+    ];
+    for (const [k, v] of extras) {
+      const kd = document.createElement("div");
+      kd.className = "k";
+      kd.textContent = k;
+      const vd = document.createElement("div");
+      vd.className = "vv";
+      vd.textContent = v;
+      vd.style.cursor = "pointer";
+      vd.title = "Clique para copiar";
+      vd.addEventListener("click", () => copyText(v));
+      meta.appendChild(kd);
+      meta.appendChild(vd);
+    }
+
+    const passado = raiz + "ta";
+    for (const [k, suf] of EVIDENCIAIS) {
+      const kd = document.createElement("div");
+      kd.className = "k";
+      kd.textContent = k;
+      const vd = document.createElement("div");
+      vd.className = "vv";
+      vd.textContent = passado + suf;
+      vd.style.cursor = "pointer";
+      vd.title = "Clique para copiar";
+      vd.addEventListener("click", () => copyText(passado + suf));
+      evid.appendChild(kd);
+      evid.appendChild(vd);
+    }
+  }
+
+  function update() {
+    const raiz = input.value.trim().toLowerCase();
+    const v = validate(raiz);
+    status.innerHTML = "";
+    input.classList.toggle("invalid", !v.ok);
+    if (!raiz) return clearAll();
+    if (!v.ok) {
+      status.innerHTML = `<div class="err">${v.msg}</div>`;
+      return clearAll();
+    }
+    if (v.warn) {
+      status.innerHTML = `<div class="err">${v.warn}</div>`;
+    }
+    render(raiz);
+  }
+
+  function clearAll() {
+    grid.innerHTML = "";
+    meta.innerHTML = "";
+    evid.innerHTML = "";
+  }
+
+  function copyText(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      status.innerHTML = `<div class="ok">Copiado: <code>${text}</code></div>`;
+      setTimeout(() => { if (status.querySelector(".ok")) status.innerHTML = ""; }, 1500);
+    });
+  }
+
+  function copyAll() {
+    const raiz = input.value.trim().toLowerCase();
+    const v = validate(raiz);
+    if (!raiz || !v.ok) return;
+    const lines = [`# Conjugação de '${raiz}'`, ""];
+    lines.push("## Tempo × Aspecto");
+    lines.push("| Tempo | Simples | Habitual | Progressivo | Perfectivo |");
+    lines.push("|-------|---------|----------|-------------|------------|");
+    for (const [tn, ts] of TEMPOS) {
+      const row = [tn];
+      for (const [, as] of ASPECTOS) row.push(raiz + ts + as);
+      lines.push("| " + row.join(" | ") + " |");
+    }
+    lines.push("");
+    lines.push(`Imperativo: ${raiz}-ti`);
+    lines.push(`Voz média:  ${raiz}-ku`);
+    lines.push(`Nominalizado: ${raiz}-i`);
+    lines.push("");
+    lines.push("## Evidenciais (sobre passado simples)");
+    const passado = raiz + "ta";
+    for (const [k, suf] of EVIDENCIAIS) {
+      lines.push(`${k.padEnd(12)} ${passado}${suf}`);
+    }
+    copyText(lines.join("\n"));
+  }
+
+  input.addEventListener("input", update);
+  copyBtn.addEventListener("click", copyAll);
+  document.querySelectorAll(".examples code[data-ex]").forEach((el) => {
+    el.addEventListener("click", () => {
+      input.value = el.dataset.ex;
+      update();
+      input.focus();
+    });
+  });
+
+  const params = new URLSearchParams(location.search);
+  if (params.has("r")) {
+    input.value = params.get("r");
+  }
+  update();
+})();
+</script>
+
+</body>
+</html>
