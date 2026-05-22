@@ -3,7 +3,7 @@
 Idioma construído do zero. Bissilábico, pronunciável universalmente, composicional.
 
 Site: [tapilang.com](https://tapilang.com) (após registro do domínio) — fonte em [docs/](docs/)
-Licença: [CC-BY-SA 4.0](LICENSE)
+Licença: [MIT](LICENSE)
 Versão: **v0.6**
 Repositório: [github.com/cchengy/tapi](https://github.com/cchengy/tapi)
 
@@ -59,6 +59,7 @@ Repositório: [github.com/cchengy/tapi](https://github.com/cchengy/tapi)
 | [CHANGELOG.md](CHANGELOG.md) | Histórico de versões |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Como contribuir |
 | [ROADMAP.md](ROADMAP.md) | Planos futuros |
+| [faq.md](faq.md) | Perguntas frequentes |
 
 ## Status v0.5
 
@@ -107,6 +108,6 @@ Repositório: [github.com/cchengy/tapi](https://github.com/cchengy/tapi)
 | Esperanto | 140 | 30.000 | ~2M |
 | Klingon | 40 | 3.000 | ~30 |
 | Toki Pona | 25 | 137 | ~100 |
-| **Tapi** | **1 dia** | **~500** | **0** |
+| **Tapi** | **2 dias** | **~660** | **0** |
 
 Tapi v0.5 = idioma funcionalmente completo no núcleo. Pronto para uso experimental.

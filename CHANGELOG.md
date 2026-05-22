@@ -2,15 +2,22 @@
 
 Formato: [versão] - data - mudanças.
 
-## [v0.6] - 2026-05-21
+## [v0.6] - 2026-05-22
 
 ### Adicionado
-- LICENSE (CC-BY-SA 4.0) explícito em arquivo
+- LICENSE (MIT) explícito em arquivo
 - Landing page estática em `docs/` (HTML + CSS + logo SVG)
 - Mini-conjugador online (JS embarcado, sem dependências)
 - Site multi-idioma: pt (padrão), en, es, zh, ja — switcher no header, detecção automática via `navigator.language`, persistência em localStorage
 - CNAME para tapilang.com (GitHub Pages)
 - Repositório publicado em github.com/cchengy/tapi
+- CLAUDE.md (instruções para Claude Code)
+- Léxico expandido (+119 entradas): termos jurídicos (advogado, juiz, tribunal, sentença, multa, recurso, contrato, etc.), médicos (cirurgia, gripe, câncer, diagnóstico, órgãos internos, especialidades, depressão, etc.), esportes (basquete, vôlei, tênis, boxe, ciclismo, olimpíada, jogador, treino, gol, placar, árbitro, etc.), internet/redes sociais (site, email, post, comentário, curtir, compartilhar, seguidor, senha, app, chat, emoji, fake news, IA, robô, etc.)
+- 3 contos curtos novos: "Kipi i Puka" (A flor e o fogo), "Sapu i Sani" (O mar e a montanha), "Kuni-puku i Pinu" (A criança e a lua) — cada um com glosa e moral
+- 10 diálogos cotidianos adicionais (diálogos 6-15): telefone, hospital, escola, trabalho, compras online, pedir ajuda na rua, conhecer alguém novo, viagem, conversa pai-filho, despedida informal
+- 20 provérbios novos em `cultura.md` (totalizando 26)
+- `faq.md` — perguntas frequentes (geral, fonologia, gramática, léxico, aprendizado, filosofia, técnico)
+- `anki_tapi.tsv` regenerado: 660 cartões
 
 ## [v0.5] - 2026-05-21
 

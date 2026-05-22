@@ -6,7 +6,7 @@
 - [x] `git init` + repositório GitHub público
 - [x] Landing page estática (HTML+CSS, 1 página) em `docs/`
 - [x] Logo SVG
-- [x] Licença explícita CC-BY-SA 4.0
+- [x] Licença explícita MIT
 - [x] Mini-conjugador online (JS)
 - [ ] Comprar e ativar tapilang.com (CNAME pronto)
 - [ ] Habilitar GitHub Pages em Settings → Pages → main/docs
@@ -17,16 +17,16 @@
 - [ ] Áudio gravado dos 9 fonemas + 50 palavras-amostra
 
 ### Conteúdo
-- [ ] Mais textos: 3 contos curtos originais
-- [ ] 10 diálogos cotidianos adicionais
-- [ ] 20 provérbios novos
-- [ ] FAQ do idioma
+- [x] Mais textos: 3 contos curtos originais (Kipi i Puka, Sapu i Sani, Kuni-puku i Pinu)
+- [x] 10 diálogos cotidianos adicionais (telefone, hospital, escola, trabalho, online, etc.)
+- [x] 20 provérbios novos
+- [x] FAQ do idioma (`faq.md`)
 
 ### Léxico expansão
-- [ ] Termos jurídicos completos (lei, crime, prova, juiz, advogado, etc.)
-- [ ] Termos médicos completos (sintomas, doenças, órgãos, procedimentos)
-- [ ] Esportes detalhados
-- [ ] Termos de internet/redes sociais (post, comentário, curtir, compartilhar, etc.)
+- [x] Termos jurídicos completos (advogado, juiz, tribunal, sentença, multa, recurso, contrato, etc.)
+- [x] Termos médicos completos (cirurgia, gripe, câncer, diagnóstico, órgãos internos, especialidades, etc.)
+- [x] Esportes detalhados (basquete, vôlei, tênis, boxe, ciclismo, olimpíada, gol, placar, árbitro)
+- [x] Termos de internet/redes sociais (post, comentário, curtir, compartilhar, seguidor, app, chat, etc.)
 
 ## v0.7 — Médio prazo (3 meses)
 

@@ -87,6 +87,26 @@ Respostas idiomáticas:
 | `kanu pi, miti tani` | "Mãos duas, cabeça uma" | Trabalhar muito, pensar com cuidado |
 | `mina pa kuti, kapa pa kuti` | "Água não volta, tempo não volta" | Aproveitar o agora |
 | `tama mapa, muta-ka kini` | "Palavra velha, verdade nova" | Velhos provérbios revelam novas verdades |
+| `tama puna, pumu kuta` | "Palavra dada, coração pega" | Compromisso vale mais que ouro |
+| `kanu tani pa patu, kanu pi patu` | "Uma mão não faz, duas fazem" | União faz a força |
+| `pinu pami, tunu kuti` | "Lua longa, sol volta" | Após noite escura, aurora |
+| `pa kima, pa nipa` | "Sem saber, sem temer" | Ignorância pode ser felicidade |
+| `mati pita, mati patu` | "Quem pensa, quem faz" | Planejar e executar são da mesma pessoa |
+| `tama matu, patu puku` | "Palavras muitas, feitos poucos" | Quem muito fala, pouco faz |
+| `kuni mapa, kima kini` | "Filho velho, saber novo" | Pais aprendem com filhos |
+| `mina puku, sapu tipi` | "Água pequena, mar grande" | Pequenas coisas formam grandes |
+| `kapa kuti pa, mati kuti puni` | "Tempo não volta, pessoa pode" | Pode-se mudar de rumo enquanto há vida |
+| `puka puku, puma katu` | "Fogo pequeno, floresta queima" | Cuidado com pequenas chamas |
+| `tipa tipi, naku pami` | "Árvore grande, raiz longa" | Grandeza vem do fundamento |
+| `mata-nupa pa kima, nupa-maku-ka kima` | "Hoje não sabe, amanhã saberá" | Aprendizado é processo |
+| `kasi tina ni mati matu` | "Comida boa é de muita gente" | A vida boa é comunal |
+| `tama-na nupa, tama mata-pi` | "Canção do dia, palavra da noite" | Cada coisa em seu tempo |
+| `muka tani, tina pi` | "Mal um, bens dois" | Para cada mal, busque dois bens |
+| `tika tipi, taka puku` | "Veja muito, fale pouco" | Observação vale mais que palavra |
+| `nupa tunu, mata-pi pinu` | "Dia tem sol, noite tem lua" | Cada estado tem seu equilíbrio |
+| `tuma tama, mata kima` | "Outra palavra, este saber" | Cada perspectiva ensina algo |
+| `kanu pasu, pumu pa pasu` | "Mão flui, coração não flui" | Trabalho passa, sentimento fica |
+| `tama-naku pa nuta tama, tama-naku ni mati nuta` | "Livro não tem voz, leitor tem" | O sentido nasce em quem lê |
 
 ## Eufemismos
 
@@ -196,4 +216,4 @@ Empréstimos aceitos quando não há equivalente possível:
 
 ## Licença
 
-Idioma Tapi e documentação: **CC-BY-SA 4.0** (uso livre com atribuição e mesma licença).
+Idioma Tapi e documentação: **MIT** (uso livre com atribuição via aviso de copyright).
