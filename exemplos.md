@@ -227,7 +227,7 @@ nuna-ti     kaman
 ```
 
 ```
-pi-pakuna       ka-nuna-pina
+pi-kuna       ka-nuna-pina
 2-100           5-10-9
 "duzentos e cinquenta e nove"
 ```

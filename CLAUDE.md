@@ -85,7 +85,7 @@ Any new root added to `lexico.tsv` MUST satisfy:
 - Compounds use `raiz-raiz` with hyphen (free to coin)
 - Prefer composition over coining new roots; check non-collision against `lexico.tsv` before adding
 
-Enforced by `tools/validar_lexico.py` (run it after any lexicon edit). Documented exceptions (closed lists): V.CV primary verbs (`ipa`, `ipi`, `ama`, `ina`, `una`) and trisyllabic numerals (`pakuna`, `tikuna`) — see `fonologia.md`.
+Enforced by `tools/validar_lexico.py` (run it after any lexicon edit). Documented exception (closed list): V.CV primary verbs (`ipa`, `ipi`, `ama`, `ina`, `una`) — see `fonologia.md`. Words needing more syllables are always hyphenated compounds (e.g. mil = `kuna-nuna`), never fused roots.
 
 Polysemy/homonymy lives in ONE line per word: `significado_a/significado_b (notas)` — never two rows with the same `palavra` (the validator rejects duplicates; `gerar_dicionario_pt.py` splits alternatives on `/`, and the parenthetical must come last because reverse keys are cut at the first `(`).
 

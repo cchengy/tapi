@@ -28,7 +28,8 @@ from pathlib import Path
 LEXICO = Path(__file__).resolve().parent.parent / "lexico.tsv"
 
 # Exceções lexicais documentadas (fonologia.md § exceções)
-EXCECOES = {"pakuna", "tikuna"}  # numerais trissílabos (cem, mil)
+# (vazio desde a reforma kuna/kuna-nuna — V.CV é coberto por RE_CURTA)
+EXCECOES: set[str] = set()
 
 RE_CHARS = re.compile(r"^[ptkmnsaiu-]+$")
 RE_RAIZ = re.compile(r"^([ptkmns][aiu]){2}$")           # CV.CV

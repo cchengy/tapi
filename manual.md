@@ -477,8 +477,8 @@ Adicionado ao adjetivo.
 | pi-nuna | 20 |
 | pi-nuna-tani | 21 |
 | ti-nuna | 30 |
-| pakuna | 100 |
-| tikuna | 1000 |
+| kuna | 100 |
+| kuna-nuna | 1000 |
 
 Composto: `dezena-unidade`. Ex.: `pi-nuna-ka` = 25.
 

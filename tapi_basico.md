@@ -58,7 +58,7 @@ Subconjunto mínimo de Tapi pensado como **interlíngua auxiliar**: aprenda em ~
 `a` ou · `asi` se · `miku` porque · `upa` quando (subord.) · `pamu` enquanto · `kami` com · `mipi` em (dentro) · `pasi` em (sobre) · `sata` sem · `kupa` todo
 
 ### Números (12)
-`tani` 1 · `pi` 2 · `ti` 3 · `pu` 4 · `ka` 5 · `ma` 6 · `nuku` 7 · `nu` 8 · `pina` 9 · `nuna` 10 · `pakuna` 100 · `tikuna` 1000
+`tani` 1 · `pi` 2 · `ti` 3 · `pu` 4 · `ka` 5 · `ma` 6 · `nuku` 7 · `nu` 8 · `pina` 9 · `nuna` 10 · `kuna` 100 · `kuna-nuna` 1000
 
 ### Verbos essenciais (40)
 **Existir / mover**: `ipa` ser · `ipi` tornar-se · `nuta` ter · `ina` ir · `una` vir · `kuti` voltar · `supa` chegar · `sipa` andar · `siti` voar · `saku` nadar

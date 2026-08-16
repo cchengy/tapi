@@ -211,14 +211,14 @@ Multiplicativa para múltiplos de 10:
 - 50 = `ka-nuna`
 - 99 = `pina-nuna-pina`
 
-Centena: `pakuna` (raiz nova)
-- 100 = `pakuna`
-- 200 = `pi-pakuna`
-- 250 = `pi-pakuna ka-nuna`
+Centena: `kuna` (raiz nova)
+- 100 = `kuna`
+- 200 = `pi-kuna`
+- 250 = `pi-kuna ka-nuna`
 
-Milhar: `tikuna`
-- 1000 = `tikuna`
-- 1.234 = `tikuna pi-pakuna ti-nuna-pu`
+Milhar: `kuna-nuna`
+- 1000 = `kuna-nuna`
+- 1.234 = `kuna-nuna pi-kuna ti-nuna-pu`
 
 ### Ordinais
 

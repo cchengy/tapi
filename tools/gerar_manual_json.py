@@ -58,7 +58,7 @@ class Extrator:
         """Célula de tabela: literal se Tapi puro, senão traduzível."""
         t = texto.strip()
         if eh_tapi_puro(t):
-            return {"lit": t}
+            return {"lit": t.replace("`", "")}  # já renderiza como código
         return {"t": self.ref(t)}
 
     def item_lista(self, texto: str):

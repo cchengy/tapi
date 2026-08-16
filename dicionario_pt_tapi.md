@@ -121,7 +121,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | caçar | sipi | verbo |
 | cego | kipa-puku | adj |
 | celular | tama-pami-puku | subst |
-| cem | pakuna | num |
+| cem | kuna | num |
 | cerveja | kiki-mina-kuma | subst |
 | chapéu | miti-namu | subst |
 | chat | tatu-tama | subst |
@@ -475,7 +475,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | mente | pita-kama | subst |
 | meraki | kapi-tipi | subst |
 | mesa | patu-tana | subst |
-| mil | tikuna | num |
+| mil | kuna-nuna | num |
 | mokita | pita-pa-supa | subst |
 | molhado | nama | adj |
 | molécula | puku-tipi | subst |

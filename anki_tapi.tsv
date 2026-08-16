@@ -44,8 +44,8 @@ sete	nuku	num	tapi num
 oito	nu	num	tapi num
 nove	pina	num	tapi num
 dez	nuna	num	tapi num
-cem	pakuna	num	tapi num
-mil	tikuna	num	tapi num
+cem	kuna	num	tapi num
+mil (composto: cem-dez, padrão multiplicativo X-Y = X×Y)	kuna-nuna	num	tapi num
 todo/tudo	kupa	quant	tapi quant
 muitos	matu	quant	tapi quant
 alguns	muti	quant	tapi quant

@@ -71,7 +71,7 @@ Estrutura: `MODAL + VERBO-base`.
 ```
 1 tani   2 pi    3 ti    4 pu    5 ka
 6 ma     7 nuku  8 nu    9 pina  10 nuna
-100 pakuna   1000 tikuna
+100 kuna   1000 kuna-nuna
 ```
 
 Ordinais: `ku-` + numeral. Composição: dezena+unidade (`nuna-tani`=11).

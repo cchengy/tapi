@@ -53,8 +53,8 @@ nuku	num	sete
 nu	num	oito
 pina	num	nove
 nuna	num	dez
-pakuna	num	cem
-tikuna	num	mil
+kuna	num	cem
+kuna-nuna	num	mil (composto: cem-dez, padrão multiplicativo X-Y = X×Y)
 kupa	quant	todo/tudo
 matu	quant	muitos
 muti	quant	alguns
