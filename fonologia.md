@@ -36,6 +36,9 @@
 ### Exceção: verbos primários V.CV
 Cinco verbos básicos universais escapam da exigência de onset na primeira sílaba: `ipa` (ser/estar), `ipi` (tornar-se), `ama` (amar), `ina` (ir), `una` (vir). Justificativa: são funções gramaticais ultra-frequentes em todas as línguas humanas; raízes V.CV economizam sílaba sem perder pronunciabilidade. Lista é **fechada** — nenhuma raiz V.CV nova pode ser adicionada.
 
+### Exceção: numerais grandes CVCVCV
+Dois numerais trissilábicos: `pakuna` (cem) e `tikuna` (mil). Justificativa: formas fundidas de alta frequência no sistema numeral; manter CV.CV exigiria compostos longos (`pa-ku-na`) sem ganho de clareza. Lista é **fechada** — junto com os cinco verbos V.CV acima, são as únicas exceções à forma de raiz; `tools/validar_lexico.py` as lista explicitamente.
+
 ### Sufixos gramaticais
 - CV bissilábico padrão (-ta, -ka, -sa, -ma, -pa, -ti, -ku)
 - Não geram clusters

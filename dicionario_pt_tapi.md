@@ -24,7 +24,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | alguns | muti | quant |
 | ali | muna | dem |
 | alma | pumu-pana | subst |
-| aluno | kima-kuta | subst |
+| aluno | kima-kuta | subst/verbo |
 | amanhã | nupa-maku-ka | subst |
 | amar | ama | verbo |
 | amarelo | mumu | adj |
@@ -41,7 +41,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | apelação | mu-muta-ka | subst |
 | apertar | mimu | verbo |
 | aplicativo | patu-puku | subst |
-| aprender | kima-kuta | verbo |
+| aprender | kima-kuta | subst/verbo |
 | apricity | papa-kata-tasi | subst |
 | aquela | maku | dem |
 | aquele | maku | dem |
@@ -87,7 +87,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | bom | tina | adj |
 | boxe | kanu-tata | subst |
 | branco | tita | adj |
-| brincar | tupu | verbo |
+| brincar | tupu | verbo/subst |
 
 ## C
 
@@ -100,7 +100,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | cafuné | tutu-ama | subst |
 | café | mina-ninu | subst |
 | cair | kata | verbo |
-| calor | kuma | subst |
+| calor | kuma | adj/subst |
 | calça | tapa-namu | subst |
 | cama | supi-patu | subst |
 | caminhar | sipa | verbo |
@@ -151,7 +151,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | comerciante | kuta-puna-mati | subst |
 | comida | kasi | subst |
 | como | nima-pa | int |
-| comparativo | sa | part |
+| comparativo | sa | part/adv |
 | compartilhar | tatu-puna | verbo |
 | comprar | kuta-mapu | verbo |
 | comprimido | mapu-naka | subst |
@@ -243,7 +243,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | elas | kupi | pron |
 | ele | si | pron |
 | elefante | tipi-tipi-natu | subst |
-| eleição | kuta-pita | subst |
+| eleição | kuta-pita | verbo/subst |
 | elemento | puti-kupa | subst |
 | eles | kupi | pron |
 | eletricidade | puka-pami | subst |
@@ -260,7 +260,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | enganar | muta-ka-pa | verbo |
 | engenheiro | patu-kima | subst |
 | enquanto | pamu | conj |
-| ensinar | kima-puna | verbo |
+| ensinar | kima-puna | subst/verbo |
 | entender | kima-supa | verbo |
 | entranhas | pasa | subst |
 | enviar | puna-tama-kupa | verbo |
@@ -268,14 +268,14 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | epidemia | tipi-pa-kupa | subst |
 | errado | mami | adj |
 | escola | kima-kama | subst |
-| escolher | kuta-pita | verbo |
+| escolher | kuta-pita | verbo/subst |
 | escrever | patu-tama | verbo |
 | escritor | tama-patu | subst |
 | escultura | panu-mapu | subst |
 | escuro | tiku | subst |
 | esfregar | nanu | verbo |
 | espinha | puti-pupi | subst |
-| esporte | tupu | subst |
+| esporte | tupu | verbo/subst |
 | esposa | mumi-tupa | subst |
 | espírito | nita-mati | subst |
 | esquecer | pita-pa | verbo |
@@ -407,7 +407,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | janela | kama-pati | subst |
 | joelho | tumi | subst |
 | jogador | tupu-mati | subst |
-| jogar | tupu | verbo |
+| jogar | tupu | verbo/subst |
 | jugaad | kini-patu-puku | subst |
 | juiz | muta-ka-patu | subst |
 | justiça | muta-ka-patu-i | subst |
@@ -456,7 +456,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 
 | Português | Tapi | Classe |
 |-----------|------|--------|
-| mais | sa | adv |
+| mais | sa | part/adv |
 | mamihlapinatapai | tatu-tika-naki-pa | subst |
 | manhã | tunu-una | subst |
 | mar | sapu | subst |
@@ -611,7 +611,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | primo | sunu | subst |
 | prisão | mipi-kama | subst |
 | privacidade | tu-pati | subst |
-| professor | kima-puna | subst |
+| professor | kima-puna | subst/verbo |
 | progressivo | -ma | suf |
 | prometer | taka-mika | verbo |
 | promotor | muka-taka-mati | subst |
@@ -637,7 +637,7 @@ Para atualizar: edite `lexico.tsv` e rode `python3 gerar_dicionario_pt.py`.
 | queijo | muma-mina-kuma | subst |
 | queimar | katu | verbo |
 | quem | nima | int |
-| quente | kuma | adj |
+| quente | kuma | adj/subst |
 | querer | naki | verbo |
 | quinta | nupa-ka | subst |
 
