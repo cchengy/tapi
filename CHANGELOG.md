@@ -2,6 +2,20 @@
 
 Formato: [versão] - data - mudanças.
 
+## [v0.7.2] - 2026-08-16
+
+### Adicionado
+- Site em produção: `tapilang.com` no Server 2 via Docker/Traefik (`Dockerfile`, `infra/`, `deploy.sh`; stack Portainer `tapilang`). Redirect apex → www. GitHub Pages descontinuado (`docs/CNAME` removido).
+- `tools/validar_lexico.py`: validador do `lexico.tsv` — fonologia, forma CV.CV, duplicatas, compostos com raiz órfã, colunas. Exit 1 em erro; `--strict` promove avisos.
+- Manual multilíngue no site (`docs/manual.html`): 20 lições navegáveis, esqueleto/tradução separados (`docs/manual/lessons.json` + `{pt,en,es,zh,ja}.json`, texto Tapi único no esqueleto). Extractor: `tools/gerar_manual_json.py`. Traduções en/es/zh/ja pendentes (fallback pt).
+- `tradutor.py` pt2tapi: ignora artigos, resolve contrações (do→de, na→em…), lematiza verbos conjugados com marca de tempo (`falou`→`takata`), plural PT -s → Tapi -n, chaves PT alternativas separadas por `/`.
+- `fonologia.md`: exceção documentada dos numerais trissilábicos `pakuna`/`tikuna` (lista fechada).
+
+### Corrigido
+- `lexico.tsv`: 14 duplicatas consolidadas em linha única (`significado_a/significado_b (notas)`); derivados regenerados.
+- Versão exibida no site/README unificada (estava 0.6 em 12 lugares).
+- Issue [#1](https://github.com/cchengy/tapi/issues/1) aberta: homofonia sistêmica partícula × sufixo (8 pares) — decisão de reforma antes do teste com falantes.
+
 ## [v0.7.1] - 2026-05-22
 
 ### Adicionado

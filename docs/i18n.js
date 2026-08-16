@@ -5,7 +5,7 @@ const I18N = {
     title: "Tapi — Idioma Construído Universal",
     description: "Tapi é um idioma construído com 9 sons, raízes bissilábicas, pronunciável em qualquer língua.",
     tagline: "Idioma construído. 9 sons. Bissilábico. Pronunciável universalmente.",
-    sub: "Versão 0.6 · Licença MIT",
+    sub: "Versão 0.7.2 · Licença MIT",
     cta_learn: "Comece a aprender",
     cta_github: "Ver no GitHub",
     sec_what_title: "O que é Tapi?",
@@ -68,7 +68,7 @@ const I18N = {
     sec_contrib_p: 'Tapi é projeto aberto sob licença MIT. Veja o <a href="https://github.com/cchengy/tapi/blob/main/CONTRIBUTING.md">guia de contribuição</a> e o <a href="https://github.com/cchengy/tapi/blob/main/ROADMAP.md">roadmap</a>.',
     btn_github: "GitHub",
     btn_issue: "Abrir issue",
-    footer: 'tapi v0.6 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT',
+    footer: 'tapi v0.7.2 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT',
   },
 
   en: {
@@ -76,7 +76,7 @@ const I18N = {
     title: "Tapi — A Universal Constructed Language",
     description: "Tapi is a constructed language with 9 sounds and bisyllabic roots, pronounceable in any language.",
     tagline: "Constructed language. 9 sounds. Bisyllabic. Universally pronounceable.",
-    sub: "Version 0.6 · MIT License",
+    sub: "Version 0.7.2 · MIT License",
     cta_learn: "Start learning",
     cta_github: "View on GitHub",
     sec_what_title: "What is Tapi?",
@@ -139,7 +139,7 @@ const I18N = {
     sec_contrib_p: 'Tapi is an open project under the MIT license. See the <a href="https://github.com/cchengy/tapi/blob/main/CONTRIBUTING.md">contribution guide</a> and the <a href="https://github.com/cchengy/tapi/blob/main/ROADMAP.md">roadmap</a>.',
     btn_github: "GitHub",
     btn_issue: "Open issue",
-    footer: 'tapi v0.6 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT',
+    footer: 'tapi v0.7.2 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT',
   },
 
   es: {
@@ -147,7 +147,7 @@ const I18N = {
     title: "Tapi — Idioma Construido Universal",
     description: "Tapi es un idioma construido con 9 sonidos y raíces bisilábicas, pronunciable en cualquier lengua.",
     tagline: "Idioma construido. 9 sonidos. Bisilábico. Pronunciable universalmente.",
-    sub: "Versión 0.6 · Licencia MIT",
+    sub: "Versión 0.7.2 · Licencia MIT",
     cta_learn: "Empezar a aprender",
     cta_github: "Ver en GitHub",
     sec_what_title: "¿Qué es Tapi?",
@@ -210,7 +210,7 @@ const I18N = {
     sec_contrib_p: 'Tapi es un proyecto abierto bajo licencia MIT. Consulta la <a href="https://github.com/cchengy/tapi/blob/main/CONTRIBUTING.md">guía de contribución</a> y el <a href="https://github.com/cchengy/tapi/blob/main/ROADMAP.md">roadmap</a>.',
     btn_github: "GitHub",
     btn_issue: "Abrir issue",
-    footer: 'tapi v0.6 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT',
+    footer: 'tapi v0.7.2 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT',
   },
 
   zh: {
@@ -218,7 +218,7 @@ const I18N = {
     title: "Tapi — 通用人工语言",
     description: "Tapi 是一种人工构造的语言，仅含 9 个音、双音节词根，可在任何语言中发音。",
     tagline: "人工语言。9 个音。双音节。通用可发音。",
-    sub: "版本 0.6 · MIT 许可证",
+    sub: "版本 0.7.2 · MIT 许可证",
     cta_learn: "开始学习",
     cta_github: "在 GitHub 查看",
     sec_what_title: "什么是 Tapi？",
@@ -281,7 +281,7 @@ const I18N = {
     sec_contrib_p: 'Tapi 是 MIT 许可下的开放项目。请参阅<a href="https://github.com/cchengy/tapi/blob/main/CONTRIBUTING.md">贡献指南</a>和<a href="https://github.com/cchengy/tapi/blob/main/ROADMAP.md">路线图</a>。',
     btn_github: "GitHub",
     btn_issue: "提交 issue",
-    footer: 'tapi v0.6 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT',
+    footer: 'tapi v0.7.2 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT',
   },
 
   ja: {
@@ -289,7 +289,7 @@ const I18N = {
     title: "Tapi — 普遍的な人工言語",
     description: "Tapi は9つの音と2音節語根からなる人工言語で、どんな言語でも発音できます。",
     tagline: "人工言語。9音。2音節。普遍的に発音可能。",
-    sub: "バージョン 0.6 · MIT ライセンス",
+    sub: "バージョン 0.7.2 · MIT ライセンス",
     cta_learn: "学習を始める",
     cta_github: "GitHub で見る",
     sec_what_title: "Tapi とは？",
@@ -352,7 +352,7 @@ const I18N = {
     sec_contrib_p: 'Tapi は MIT の下のオープンプロジェクトです。<a href="https://github.com/cchengy/tapi/blob/main/CONTRIBUTING.md">貢献ガイド</a>と<a href="https://github.com/cchengy/tapi/blob/main/ROADMAP.md">ロードマップ</a>を参照してください。',
     btn_github: "GitHub",
     btn_issue: "Issue を作成",
-    footer: 'tapi v0.6 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT',
+    footer: 'tapi v0.7.2 · <a href="https://github.com/cchengy/tapi">github.com/cchengy/tapi</a> · MIT',
   },
 };
 
