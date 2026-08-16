@@ -9,7 +9,9 @@ Formato: [versão] - data - mudanças.
 - `tools/validar_lexico.py`: validador do `lexico.tsv` — fonologia, forma CV.CV, duplicatas, compostos com raiz órfã, colunas. Exit 1 em erro; `--strict` promove avisos.
 - Manual multilíngue no site (`docs/manual.html`): 20 lições navegáveis, esqueleto/tradução separados (`docs/manual/lessons.json` + `{pt,en,es,zh,ja}.json`, texto Tapi único no esqueleto). Extractor: `tools/gerar_manual_json.py`. Traduções en/es/zh/ja pendentes (fallback pt).
 - `tradutor.py` pt2tapi: ignora artigos, resolve contrações (do→de, na→em…), lematiza verbos conjugados com marca de tempo (`falou`→`takata`), plural PT -s → Tapi -n, chaves PT alternativas separadas por `/`.
-- Manual traduzido: `en.json` e `es.json` completos (512 strings cada; zh/ja pendentes). Exemplos de som da Lição 1 localizados por idioma.
+- Manual traduzido nos 5 idiomas: `en`, `es`, `zh`, `ja` completos (512 strings cada). Exemplos de som da Lição 1 localizados (inglês usa "car" p/ /a/ e /k/; mandarim usa b/d/g não aspirados do pinyin p/ /p t k/; japonês usa kana). zh/ja aguardam revisão nativa da terminologia gramatical.
+- Áudio no site: `tools/gerar_audio_web.py` gera 181 amostras m4a (9 fonemas, 18 sílabas, 50 palavras, todo token Tapi do manual) via `say` → `docs/audio/` + manifest. No manual, qualquer palavra Tapi com áudio é clicável (play).
+- Manual interativo: respostas de exercício escondidas atrás de clique (`<details>`), conjugador embutido na Lição 5 com rótulos localizados.
 - **Reforma numeral**: `pakuna`→`kuna` (cem, raiz CV.CV) e `tikuna`→`kuna-nuna` (mil = cem-dez, padrão multiplicativo X-Y = X×Y). Elimina a exceção trissilábica: raiz fora de CV.CV agora não existe (sobram só os 5 verbos V.CV). Regra: precisou de mais sílabas → composto com hífen.
 
 ### Corrigido

@@ -18,6 +18,17 @@
   article p, article li { color: var(--fg-soft); }
   article .tapi { color: #b794f4; font-weight: 600; font-family: ui-monospace, Menlo, monospace; }
   article li .gloss-eq { color: var(--fg-soft); }
+  article .tapi.playable { cursor: pointer; border-bottom: 1px dotted #b794f4; }
+  article .tapi.playable:hover { color: #d6bcfa; }
+  article .tapi.playing { color: #fde68a; border-bottom-color: #fde68a; }
+  details.answer { margin: 4px 0; }
+  details.answer summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+  details.answer[open] summary { color: var(--fg-soft); }
+  .audio-hint { font-size: 0.85rem; color: var(--fg-soft); background: var(--bg-soft); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; margin: 12px 0; }
+  .conj-tool { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 24px; }
+  .conj-tool label { display: block; font-weight: 600; margin-bottom: 6px; }
+  .conj-tool input { width: 100%; padding: 9px 12px; background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; color: var(--fg); font-size: 1rem; font-family: ui-monospace, Menlo, monospace; }
+  .conj-tool pre { margin: 14px 0 0; padding: 14px; background: var(--code-bg); border-radius: 8px; font-size: 0.88rem; overflow-x: auto; color: var(--fg-soft); }
   .pager { display: flex; justify-content: space-between; margin-top: 48px; gap: 12px; }
   .topbar { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; padding: 16px 24px 0; }
   .topbar .home { font-weight: 600; }
@@ -51,12 +62,33 @@
 <script>
 (async function () {
   const CHROME = {
-    pt: { manual: "Manual", prev: "← Lição anterior", next: "Próxima lição →", missing: "" },
-    en: { manual: "Manual", prev: "← Previous lesson", next: "Next lesson →", missing: " (PT)" },
-    es: { manual: "Manual", prev: "← Lección anterior", next: "Siguiente lección →", missing: " (PT)" },
-    zh: { manual: "教程", prev: "← 上一课", next: "下一课 →", missing: " (PT)" },
-    ja: { manual: "マニュアル", prev: "← 前のレッスン", next: "次のレッスン →", missing: " (PT)" },
+    pt: { manual: "Manual", prev: "← Lição anterior", next: "Próxima lição →",
+      audioHint: "🔊 Palavras sublinhadas têm áudio — clique para ouvir.",
+      conjTitle: "Experimente: conjugue uma raiz", conjLabel: "Raiz (ex.: ama, mani, taka)",
+      conjInvalid: "só letras p t k m n s a i u", conjEmpty: "— digite acima —",
+      tenses: ["presente", "passado", "futuro"], aspects: ["simples", "habitual", "progressivo", "perfectivo"] },
+    en: { manual: "Manual", prev: "← Previous lesson", next: "Next lesson →",
+      audioHint: "🔊 Underlined words have audio — click to listen.",
+      conjTitle: "Try it: conjugate a root", conjLabel: "Root (e.g. ama, mani, taka)",
+      conjInvalid: "only letters p t k m n s a i u", conjEmpty: "— type above —",
+      tenses: ["present", "past", "future"], aspects: ["simple", "habitual", "progressive", "perfective"] },
+    es: { manual: "Manual", prev: "← Lección anterior", next: "Siguiente lección →",
+      audioHint: "🔊 Las palabras subrayadas tienen audio — haz clic para escuchar.",
+      conjTitle: "Pruébalo: conjuga una raíz", conjLabel: "Raíz (ej.: ama, mani, taka)",
+      conjInvalid: "solo letras p t k m n s a i u", conjEmpty: "— escribe arriba —",
+      tenses: ["presente", "pasado", "futuro"], aspects: ["simple", "habitual", "progresivo", "perfectivo"] },
+    zh: { manual: "教程", prev: "← 上一课", next: "下一课 →",
+      audioHint: "🔊 带下划线的词有音频 — 点击播放。",
+      conjTitle: "试一试：变位一个词根", conjLabel: "词根（如 ama、mani、taka）",
+      conjInvalid: "只能用字母 p t k m n s a i u", conjEmpty: "— 在上面输入 —",
+      tenses: ["现在", "过去", "将来"], aspects: ["简单", "习惯", "进行", "完成"] },
+    ja: { manual: "マニュアル", prev: "← 前のレッスン", next: "次のレッスン →",
+      audioHint: "🔊 下線付きの単語は音声あり — クリックで再生。",
+      conjTitle: "やってみよう：語根を活用する", conjLabel: "語根（例：ama、mani、taka）",
+      conjInvalid: "使える文字は p t k m n s a i u のみ", conjEmpty: "— 上に入力 —",
+      tenses: ["現在", "過去", "未来"], aspects: ["単純", "習慣", "進行", "完了"] },
   };
+  const RE_ANSWER = /^(Resposta|Answer|Respuesta|答案|答え)[::]\s*/;
 
   let lang = localStorage.getItem("tapi_lang") || (navigator.language || "pt").slice(0, 2);
   if (!CHROME[lang]) lang = "pt";
@@ -64,6 +96,8 @@
   const skel = await (await fetch("manual/lessons.json")).json();
   const ptStrings = await (await fetch("manual/pt.json")).json();
   let strings = ptStrings;
+  let audioMap = {};
+  try { audioMap = await (await fetch("audio/manifest.json")).json(); } catch {}
 
   async function loadLang(l) {
     lang = CHROME[l] ? l : "pt";
@@ -89,6 +123,12 @@
   const item = (it) => {
     if (it.tapi !== undefined)
       return '<span class="tapi">' + esc(it.tapi) + '</span> <span class="gloss-eq">= ' + md(strings[it.t] || "") + "</span>";
+    // resposta de exercício → escondida atrás de um clique
+    const txt = it.t !== undefined ? (strings[it.t] || "") : null;
+    if (txt) {
+      const m = txt.match(RE_ANSWER);
+      if (m) return '<details class="answer"><summary>' + esc(m[1]) + "</summary>" + md(txt.replace(RE_ANSWER, "")) + "</details>";
+    }
     return cell(it);
   };
 
@@ -122,11 +162,13 @@
     }).join("");
 
     let h = "<h1>" + md(strings[cur.title] || "") + "</h1>";
+    if (cur.id === 1) h += '<p class="audio-hint">' + c.audioHint + "</p>";
     h += cur.intro.map(blockHtml).join("");
     for (const s of cur.sections) {
       h += "<h2>" + md(strings[s.title] || "") + "</h2>";
       h += s.blocks.map(blockHtml).join("");
     }
+    if (cur.id === 5) h += conjToolHtml(c);
 
     const i = skel.lessons.indexOf(cur);
     h += '<div class="pager">';
@@ -137,7 +179,52 @@
     document.getElementById("content").innerHTML = h;
     document.title = (strings[cur.title] || "Manual") + " — Tapi";
     document.getElementById("lang-switch").value = lang;
+    activateAudio();
+    if (cur.id === 5) wireConjTool(c);
     window.scrollTo(0, 0);
+  }
+
+  // --- áudio: toda palavra Tapi presente no manifest vira clicável ---
+  let currentAudio = null;
+  function activateAudio() {
+    document.querySelectorAll("#content .tapi").forEach((el) => {
+      const tok = el.textContent.trim().replace(/[.,!?;:]+$/, "").toLowerCase();
+      if (!audioMap[tok]) return;
+      el.classList.add("playable");
+      el.title = "🔊 " + tok;
+      el.addEventListener("click", () => {
+        if (currentAudio) currentAudio.pause();
+        const a = new Audio(audioMap[tok]);
+        currentAudio = a;
+        el.classList.add("playing");
+        a.addEventListener("ended", () => el.classList.remove("playing"));
+        a.play();
+      });
+    });
+  }
+
+  // --- conjugador embutido (lição 5) ---
+  const T_SUF = ["", "ta", "ka"], A_SUF = ["", "sa", "ma", "pa"];
+  function conjToolHtml(c) {
+    return '<div class="conj-tool"><label for="conj-root">' + esc(c.conjTitle) + "</label>" +
+      '<input id="conj-root" placeholder="' + esc(c.conjLabel) + '" autocomplete="off">' +
+      '<pre id="conj-out">' + esc(c.conjEmpty) + "</pre>" +
+      '<p style="margin:10px 0 0"><a href="conjugador.html">→ conjugador.html</a></p></div>';
+  }
+  function wireConjTool(c) {
+    const inp = document.getElementById("conj-root");
+    const out = document.getElementById("conj-out");
+    inp.addEventListener("input", () => {
+      const r = inp.value.trim().toLowerCase();
+      if (!r) { out.textContent = c.conjEmpty; return; }
+      if (!/^[ptkmnsaiu]+$/.test(r)) { out.textContent = c.conjInvalid; return; }
+      const w = Math.max(...c.aspects.map(a => a.length), 12) + 1;
+      const lines = ["".padEnd(11) + c.aspects.map(a => a.padEnd(w)).join("")];
+      c.tenses.forEach((tn, ti) => {
+        lines.push(tn.padEnd(11) + A_SUF.map(as => (r + T_SUF[ti] + as).padEnd(w)).join(""));
+      });
+      out.textContent = lines.join("\n");
+    });
   }
 
   window.addEventListener("hashchange", render);
