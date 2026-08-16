@@ -1,0 +1,39 @@
+# Stack de PRODUÇÃO (Portainer / Docker standalone) — tapilang.com
+# Server 2 (autointeligencia), Traefik v2.11 compartilhado na rede externa `proxy`.
+# Site estático (docs/) em nginx. Imagem vem do registry privado — ver deploy.sh.
+#
+#   tapilang.com      -> 301 https://www.tapilang.com  (redirect non-www -> www)
+#   www.tapilang.com  -> site
+
+services:
+  web:
+    image: registry.autointeligencia.com.br/tapilang:latest
+    restart: unless-stopped
+    networks: [proxy]
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/healthz"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=proxy
+
+      # Router único p/ os dois hosts: o LE emite cert para ambos e o
+      # middleware manda o apex para o www.
+      - traefik.http.routers.tapilang.rule=Host(`tapilang.com`) || Host(`www.tapilang.com`)
+      - traefik.http.routers.tapilang.entrypoints=websecure
+      - traefik.http.routers.tapilang.tls=true
+      - traefik.http.routers.tapilang.tls.certresolver=letsencrypt
+      - traefik.http.routers.tapilang.middlewares=tapilang-www@docker
+      - traefik.http.services.tapilang.loadbalancer.server.port=80
+
+      # $$ vira $ literal na interpolação do compose; ${1} é do Traefik.
+      - traefik.http.middlewares.tapilang-www.redirectregex.regex=^https?://tapilang\.com/(.*)
+      - traefik.http.middlewares.tapilang-www.redirectregex.replacement=https://www.tapilang.com/$${1}
+      - traefik.http.middlewares.tapilang-www.redirectregex.permanent=true
+
+networks:
+  proxy:
+    external: true
