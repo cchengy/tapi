@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manual — Tapi</title>
+<meta name="description" content="Curso completo de Tapi: 20 lições, do alfabeto à conversação.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<style>
+  .manual-wrap { display: grid; grid-template-columns: 240px 1fr; gap: 32px; max-width: 1100px; margin: 0 auto; padding: 24px; }
+  nav.lessons { position: sticky; top: 16px; align-self: start; max-height: calc(100vh - 32px); overflow-y: auto; }
+  nav.lessons a { display: block; padding: 7px 12px; border-radius: 8px; color: var(--fg-soft); font-size: 0.9rem; }
+  nav.lessons a.active { background: var(--bg-soft); color: var(--fg); border-left: 2px solid var(--accent); }
+  nav.lessons a:hover { text-decoration: none; color: var(--fg); }
+  article h1 { font-size: 1.8rem; letter-spacing: -0.01em; margin-top: 0; }
+  article h2 { font-size: 1.25rem; margin: 28px 0 10px; color: var(--fg); }
+  article p, article li { color: var(--fg-soft); }
+  article .tapi { color: #b794f4; font-weight: 600; font-family: ui-monospace, Menlo, monospace; }
+  article li .gloss-eq { color: var(--fg-soft); }
+  .pager { display: flex; justify-content: space-between; margin-top: 48px; gap: 12px; }
+  .topbar { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; padding: 16px 24px 0; }
+  .topbar .home { font-weight: 600; }
+  @media (max-width: 720px) {
+    .manual-wrap { grid-template-columns: 1fr; }
+    nav.lessons { position: static; max-height: none; display: flex; flex-wrap: wrap; gap: 4px; }
+    nav.lessons a { padding: 5px 9px; border: 1px solid var(--border); }
+    nav.lessons a .full { display: none; }
+  }
+  @media (min-width: 721px) { nav.lessons a .short { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="home" href="index.html">← tapi</a>
+  <select id="lang-switch" aria-label="Language">
+    <option value="pt">Português</option>
+    <option value="en">English</option>
+    <option value="es">Español</option>
+    <option value="zh">中文</option>
+    <option value="ja">日本語</option>
+  </select>
+</div>
+
+<div class="manual-wrap">
+  <nav class="lessons" id="nav"></nav>
+  <article id="content"><p>…</p></article>
+</div>
+
+<script>
+(async function () {
+  const CHROME = {
+    pt: { manual: "Manual", prev: "← Lição anterior", next: "Próxima lição →", missing: "" },
+    en: { manual: "Manual", prev: "← Previous lesson", next: "Next lesson →", missing: " (PT)" },
+    es: { manual: "Manual", prev: "← Lección anterior", next: "Siguiente lección →", missing: " (PT)" },
+    zh: { manual: "教程", prev: "← 上一课", next: "下一课 →", missing: " (PT)" },
+    ja: { manual: "マニュアル", prev: "← 前のレッスン", next: "次のレッスン →", missing: " (PT)" },
+  };
+
+  let lang = localStorage.getItem("tapi_lang") || (navigator.language || "pt").slice(0, 2);
+  if (!CHROME[lang]) lang = "pt";
+
+  const skel = await (await fetch("manual/lessons.json")).json();
+  const ptStrings = await (await fetch("manual/pt.json")).json();
+  let strings = ptStrings;
+
+  async function loadLang(l) {
+    lang = CHROME[l] ? l : "pt";
+    localStorage.setItem("tapi_lang", lang);
+    document.documentElement.lang = lang;
+    if (lang === "pt") { strings = ptStrings; }
+    else {
+      try {
+        const tr = await (await fetch("manual/" + lang + ".json")).json();
+        strings = Object.assign({}, ptStrings, tr);
+      } catch { strings = ptStrings; }
+    }
+    render();
+  }
+
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  // inline markdown: `code` (Tapi) e **negrito**
+  const md = (s) => esc(s)
+    .replace(/`([^`]+)`/g, '<span class="tapi">$1</span>')
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+
+  const cell = (c) => c.lit !== undefined ? '<span class="tapi">' + esc(c.lit) + "</span>" : md(strings[c.t] || "");
+  const item = (it) => {
+    if (it.tapi !== undefined)
+      return '<span class="tapi">' + esc(it.tapi) + '</span> <span class="gloss-eq">= ' + md(strings[it.t] || "") + "</span>";
+    return cell(it);
+  };
+
+  function blockHtml(b) {
+    if (b.type === "p") return "<p>" + (b.lit !== undefined ? '<span class="tapi">' + esc(b.lit) + "</span>" : md(strings[b.t] || "")) + "</p>";
+    if (b.type === "table") {
+      let h = "<table><thead><tr>" + b.header.map((c) => "<th>" + cell(c) + "</th>").join("") + "</tr></thead><tbody>";
+      h += b.rows.map((r) => "<tr>" + r.map((c) => "<td>" + cell(c) + "</td>").join("") + "</tr>").join("");
+      return h + "</tbody></table>";
+    }
+    if (b.type === "ul" || b.type === "ol")
+      return "<" + b.type + ">" + b.items.map((it) => "<li>" + item(it) + "</li>").join("") + "</" + b.type + ">";
+    return "";
+  }
+
+  function currentLesson() {
+    const m = location.hash.match(/licao-(\d+)/);
+    const n = m ? parseInt(m[1], 10) : 1;
+    return skel.lessons.find((l) => l.id === n) || skel.lessons[0];
+  }
+
+  function render() {
+    const c = CHROME[lang];
+    const cur = currentLesson();
+
+    document.getElementById("nav").innerHTML = skel.lessons.map((l) => {
+      const t = strings[l.title] || "";
+      const short = t.match(/Lição (\d+)/) ? t.match(/Lição (\d+)/)[1] : l.id;
+      return '<a href="#licao-' + l.id + '"' + (l.id === cur.id ? ' class="active"' : "") + ">" +
+        '<span class="full">' + md(t) + '</span><span class="short">' + short + "</span></a>";
+    }).join("");
+
+    let h = "<h1>" + md(strings[cur.title] || "") + "</h1>";
+    h += cur.intro.map(blockHtml).join("");
+    for (const s of cur.sections) {
+      h += "<h2>" + md(strings[s.title] || "") + "</h2>";
+      h += s.blocks.map(blockHtml).join("");
+    }
+
+    const i = skel.lessons.indexOf(cur);
+    h += '<div class="pager">';
+    h += i > 0 ? '<a class="btn" href="#licao-' + skel.lessons[i - 1].id + '">' + c.prev + "</a>" : "<span></span>";
+    h += i < skel.lessons.length - 1 ? '<a class="btn" href="#licao-' + skel.lessons[i + 1].id + '">' + c.next + "</a>" : "<span></span>";
+    h += "</div>";
+
+    document.getElementById("content").innerHTML = h;
+    document.title = (strings[cur.title] || "Manual") + " — Tapi";
+    document.getElementById("lang-switch").value = lang;
+    window.scrollTo(0, 0);
+  }
+
+  window.addEventListener("hashchange", render);
+  document.getElementById("lang-switch").addEventListener("change", (e) => loadLang(e.target.value));
+  await loadLang(lang);
+})();
+</script>
+
+</body>
+</html>
